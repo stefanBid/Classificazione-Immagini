@@ -5,11 +5,11 @@ Questo progetto è caratterizzato da due fasi:
 
 ### Struttura del progetto
 Il progetto nella repository prevede la seguente oranizzazione:
-* TestDataSet
+* __TestDataSet__
   * images_output
   * MNIST
   * F-MNIST
-  * support
+  * *__support__*
     * mnist.py
     * f_mnist.py
     * grafics.py
