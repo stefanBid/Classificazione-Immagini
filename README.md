@@ -8,7 +8,7 @@ Il progetto nella repository prevede la seguente oranizzazione:
 * __TestDataSet__
   * images_output
   * MNIST
-  * F-MNIST
+  * F_MNIST
   * *__support__*
     * mnist.py
     * f_mnist.py
@@ -26,7 +26,7 @@ Nella seguente tabella viene mostrato il contenuto siogni cartella o file
 | TestDataSet               | Directory     | Directory principale del progetto contiene tutte le dir/file sottostanti                                      |
 | images_output             | Directory     | Directory contenente i test grafici  generati automaticamente dagli script python                             |
 | MNIST                     | Directory     | Directory contenete il dataset MNIST compresso                                                                |
-| F-MNIST                   | Directory     | Directory contenente il dataset F-MNIST compresso                                                             |
+| F_MNIST                   | Directory     | Directory contenente il dataset F-MNIST compresso                                                             |
 | support                   | Directory     | Directory contenete script python con funzioni di supporto per visualizzazioni grafiche e caricamento dataset |
 | mnist.py                  | File Python   | Script per caricare il dataset MNIST                                                                          |
 | f_mnist.py                | File Python   | Script per caricare il dataset F-MNIST                                                                        |
