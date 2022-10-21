@@ -109,5 +109,9 @@ byteswap:  False
 type: uint8  
 None  
 
+## F-MNIST
+!!! In fase di completamento !!!  
+
 
 # Test Reti Neurali su dataset MNIST e F-MNIST
+!!! In Fase di progettazione !!!
