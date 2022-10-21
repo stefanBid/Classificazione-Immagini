@@ -180,7 +180,7 @@ Al termine dell'addestramento del modello si otterrà una nuova directory in `im
        * ...
 
 **** CM_test.png
-![CM_test](https://ibb.co/YWPwBq6)
+![CM_test](https://i.ibb.co/Sx5Gw92/CM-test.png)
 **** CM_train.png
 ![CM_train]()
 **** Errore_32.png
