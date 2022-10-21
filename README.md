@@ -109,6 +109,38 @@ byteswap:  False
 type: uint8  
 None  
 
+### Testare l'accuratezza dei classificatori
+Le API dei classificatori utilizzati per essere addestrati sui set di train e di test sono stati importati dalla libreria `sklearn`. Per maggiori informazioni sulla libreria [sklearn](https://scikit-learn.org/stable/modules/classes.html)
+```python
+# Classificatore KNN
+from sklearn.neighbors import KNeighborsClassifier
+
+# Alberi decisionali
+from sklearn.tree import DecisionTreeClassifier
+
+# Foreste Randomiche
+from sklearn.ensemble import RandomForestClassifier
+
+# Macchina a vettori di supporto SVM
+from sklearn.svm import SVC
+```
+Altre API da `sklearn` utilizzate:
+```python
+# Per portare i sets sulla stessa scala (0-1)
+from sklearn.preprocessing import MinMaxScaler
+
+# Errore quadratico medio per il controllo dell'overfitting
+from sklearn.metrics mean_squared_error
+
+# Per calcolare l'accuratezza della stima
+from sklearn.metrics import accuracy_score
+
+# Per misurare il modo in cui sono statedeterminate le stime
+from sklearn.metrics import log_loss
+```
+
+
+
 ## F-MNIST
 !!! In fase di completamento !!!  
 
