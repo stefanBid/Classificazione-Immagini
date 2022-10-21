@@ -155,7 +155,7 @@ from support.grafics import printConfMatrix, printErroneusClassifications
 *Qui di seguito viene riportato un esempio di ciò che si ottiene dall'esecuzione di uno degli script python.*
 L'esempio prevede l'esecuzione dello script `dataMNIST_SVM.py`  
 
-> > [!NOTE]
+> [NB]
 > Gli script forniscono un implementazione generale del modello, tuttavia si possno modificare i parametri del modello al momento della sua creazione per ottenere risultati differenti.
 
 Nel caso del nostro esempio:
