@@ -152,7 +152,7 @@ from support.grafics import printConfMatrix, printErroneusClassifications
 (Successive funzioni sono in fase di creazione per avere un quadro più chiaro e dettagliato del modello testato)
 
 ### Esempio
-*Qui di seguito viene riportato un esempio di ciò che si ottiene dall'esecuzione di uno degli script python.*
+*Qui di seguito viene riportato un esempio di ciò che si ottiene dall'esecuzione di uno degli script python. L'esempio preso in cosiderazione è un test effettuato il 20/10/2022 terminato alle ore 20:35*
 L'esempio prevede l'esecuzione dello script `dataMNIST_SVM.py`  
 
 > [NB]
@@ -162,10 +162,29 @@ Nel caso del nostro esempio:
 ```python
 # Su una macchina a vettori di supporto si possono utilizzare diverse funzioni kernerl
 kf = ["linear", "rbf", "sigmoid", "poly"]
-i = 3  # Modifica il suo valore tra 0 e 3 per scegliere una funzione
+i = 1  # Modifica il suo valore tra 0 e 3 per scegliere una funzione
 svm = SVC(kernel=kf[i])
 ```
 
+Al termine dell'addestramento del modello si otterrà una nuova directory in `images_output`  che avrà la seguente sintassi `TEST_MNIST_nomModello_dataTest` nel nostro caso:  
+
+* images_output
+  * ... altri TEST
+  * TEST_MNIST_SVM_2022_10_20_20_35_38
+    * Confusion_Matrix
+       * CM_test.png
+       * CM_train.png
+    * Erroneus_Classifications 
+       * ... 
+       * Errore_32.png
+       * ...
+
+**** CM_test.png
+![CM_test](https://ibb.co/YWPwBq6)
+**** CM_train.png
+![CM_train]()
+**** Errore_32.png
+![Error]()
 ## F-MNIST
 !!! In fase di completamento !!!  
 
