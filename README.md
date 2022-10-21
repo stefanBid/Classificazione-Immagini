@@ -77,6 +77,8 @@ print(X_test.info())
 ```
 
 I risultati ottenuti sono i seguenti:  
+  
+  
 Dimensions TRAIN SET:  (60000, 784)  
 
 Dimensions TEST SET:  (60000, 784)  
