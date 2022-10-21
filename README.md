@@ -149,7 +149,22 @@ from support.grafics import printConfMatrix, printErroneusClassifications
 | **printConfMatrix(...param)**              | Genera un immagine .png della matrice di confusione su un set di dati      |
 | **printErroneusClassifications(...param)** | Genera le immagini .png dei primi 100 elementi classificati in modo errato |
 
+(Successive funzioni sono in fase di creazione per avere un quadro più chiaro e dettagliato del modello testato)
 
+### Esempio
+*Qui di seguito viene riportato un esempio di ciò che si ottiene dall'esecuzione di uno degli script python.*
+L'esempio prevede l'esecuzione dello script `dataMNIST_SVM.py`  
+
+> > [!NOTE]
+> Gli script forniscono un implementazione generale del modello, tuttavia si possno modificare i parametri del modello al momento della sua creazione per ottenere risultati differenti.
+
+Nel caso del nostro esempio:
+```python
+# Su una macchina a vettori di supporto si possono utilizzare diverse funzioni kernerl
+kf = ["linear", "rbf", "sigmoid", "poly"]
+i = 3  # Modifica il suo valore tra 0 e 3 per scegliere una funzione
+svm = SVC(kernel=kf[i])
+```
 
 ## F-MNIST
 !!! In fase di completamento !!!  
