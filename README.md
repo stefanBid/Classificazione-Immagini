@@ -10,9 +10,9 @@ Il progetto nella repository prevede la seguente oranizzazione:
   * MNIST
   * F-MNIST
   * support
-   + mnist.py
-   + f_mnist.py
-   + grafics.py
+   * mnist.py
+   * f_mnist.py
+   * grafics.py
   * dataMNIST_KNN.py
   * dataMNIST_decisionTree.py
   * dataMNIST_randomForest.py
