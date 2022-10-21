@@ -139,6 +139,16 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import log_loss
 ```
 
+Per l'output grafico invece sono state realizzate le funzioni ex novo `printConfMatrix()`, `printErroneusClassifications()`  che fanno uso di altre funzioni della libreria `matplotlib`. Per maggiori informazioni sulla libreria [matplotlib](https://matplotlib.org/)
+```python
+
+from support.grafics import printConfMatrix, printErroneusClassifications
+```
+| **Funzione**                               | **Compito**                                                                |
+|--------------------------------------------|----------------------------------------------------------------------------|
+| **printConfMatrix(...param)**              | Genera un immagine .png della matrice di confusione su un set di dati      |
+| **printErroneusClassifications(...param)** | Genera le immagini .png dei primi 100 elementi classificati in modo errato |
+
 
 
 ## F-MNIST
