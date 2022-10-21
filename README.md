@@ -69,7 +69,7 @@ Di seguito viene mostrato il blocco di codice utilizzato per ottenere le info ut
 
 # dimensioni del set di tarin
 print("Dimensions TRAIN SET: ",X_train.shape, "\n")
-print("Dimensions TEST SET: ",X_train.shape, "\n")
+print("Dimensions TEST SET: ",X_test.shape, "\n")
 
 # data types
 print(X_train.info())
@@ -81,7 +81,7 @@ __I risultati ottenuti sono i seguenti:__
   
 Dimensions TRAIN SET:  (60000, 784)  
 
-Dimensions TEST SET:  (60000, 784)  
+Dimensions TEST SET:   (10000, 784)  
 
 class:  ndarray  
 shape:  (60000, 784)  
