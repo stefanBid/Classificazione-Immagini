@@ -37,7 +37,9 @@ Nella seguente tabella viene mostrato il contenuto siogni cartella o file
 | dataMNIST_SVM.py          | File Python   | Script per addestrare una SVM su dataset MNIST                                                                |
 | Test_History.txt          | File di testo | Contiene il salvataggio di tutti i test effettuati                                                            |
 
+La directory `images_output` conterrà una directory creata automticamente per ogni test effettuato e al suo interno avremo la matrice di confusione sul set di train e di test del dataset utilizzato, e le prime 100 immagini del set di test classificate erroneamente.
 
+Se si vuole caricare il progetto manualmente tenere conto della gerarchia sopra mostrata altrimenti è presente nel repository il file `progetto.zip` che permette di caricare autmaticamete il progetto sul proprio IDE (io ho utilizzato [PyCharm](https://www.jetbrains.com/pycharm/)). 
 
 
 # Test classificatori su dataset MNIST e F-MNIST
@@ -47,6 +49,63 @@ I classificatori utilizzati sono stati:
 - Alberi decisionali
 - Foreste Casuali
 - Macchina a vettori di supporto (SVM)
+
+## MNIST
+
+### Importare il dataset
+Per rendere utilizzabile il dataset MNIST, questo è stato importato nel progetto da locale.
+Come prima accennato i file zip contenenti il dataset sono presenti nella cartella `MNIST` e per importali è stata utilizzata la funzione `load_mnist(path="percorso")` presente nello script `mnist.py`
+
+```python
+from support.mnist import load_mnist
+X_train, X_test, Y_train, Y_test = load_mnist(path="MNIST")
+```
+
+### Alcune info sul dataset utilizzato
+Di seguito viene mostrato il blocco di codice utilizzato per ottenere le info utili sul dataset che sono servite poi per effettuare dei test ottimali:
+
+```python
+# sul dataset
+
+# dimensioni del set di tarin
+print("Dimensions TRAIN SET: ",X_train.shape, "\n")
+print("Dimensions TEST SET: ",X_train.shape, "\n")
+
+# data types
+print(X_train.info())
+print(X_test.info())
+```
+
+I risultati ottenuti sono i seguenti:
+Dimensions TRAIN SET:  (60000, 784)  
+
+Dimensions TEST SET:  (60000, 784)  
+
+class:  ndarray  
+shape:  (60000, 784)  
+strides:  (784, 1)  
+itemsize:  1  
+aligned:  True  
+contiguous:  True  
+fortran:  False  
+data pointer: 0x7fdcd9c00000  
+byteorder:  little  
+byteswap:  False  
+type: uint8  
+None  
+
+class:  ndarray  
+shape:  (10000, 784)  
+strides:  (784, 1)  
+itemsize:  1  
+aligned:  True  
+contiguous:  True  
+fortran:  False  
+data pointer: 0x7fdcdc8dd000  
+byteorder:  little  
+byteswap:  False  
+type: uint8  
+None  
 
 
 # Test Reti Neurali su dataset MNIST e F-MNIST
