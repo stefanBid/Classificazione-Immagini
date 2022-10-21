@@ -6,18 +6,18 @@ Questo progetto è caratterizzato da due fasi:
 ### Struttura del progetto
 Il progetto nella repository prevede la seguente oranizzazione:
 - TestDataSet
- -  images_output
- -  MNIST
- -  F-MNIST
- -  support
-  - mnist.py
-  - f_mnist.py
-  - grafics.py
- -  dataMNIST_KNN.py
- -  dataMNIST_decisionTree.py
- -  dataMNIST_randomForest.py
- -  dataMNIST_SVM.py
- -  Test_History.txt
+  * images_output
+  * MNIST
+  * F-MNIST
+  * support
+   + mnist.py
+   + f_mnist.py
+   + grafics.py
+  * dataMNIST_KNN.py
+  * dataMNIST_decisionTree.py
+  * dataMNIST_randomForest.py
+  * dataMNIST_SVM.py
+  * Test_History.txt
   
 Nella seguente tabella viene mostrato il contenuto siogni cartella o file  
 
@@ -76,7 +76,7 @@ print(X_train.info())
 print(X_test.info())
 ```
 
-I risultati ottenuti sono i seguenti:
+I risultati ottenuti sono i seguenti:  
 Dimensions TRAIN SET:  (60000, 784)  
 
 Dimensions TEST SET:  (60000, 784)  
