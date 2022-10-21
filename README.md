@@ -179,11 +179,11 @@ Al termine dell'addestramento del modello si otterrà una nuova directory in `im
        * Errore_32.png
        * ...
 
-**** CM_test.png
+#### CM_test.png
 ![CM_test](https://i.ibb.co/Sx5Gw92/CM-test.png)
-**** CM_train.png
+#### CM_train.png
 ![CM_train]()
-**** Errore_32.png
+#### Errore_32.png
 ![Error]()
 ## F-MNIST
 !!! In fase di completamento !!!  
