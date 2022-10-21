@@ -176,15 +176,15 @@ Al termine dell'addestramento del modello si otterrà una nuova directory in `im
        * CM_train.png
     * Erroneus_Classifications 
        * ... 
-       * Errore_32.png
+       * Errore_844.png
        * ...
 
 #### CM_test.png
 ![CM_test](https://i.ibb.co/Sx5Gw92/CM-test.png)
 #### CM_train.png
-![CM_train]()
-#### Errore_32.png
-![Error]()
+![CM_train](https://i.ibb.co/KWqtGSc/CM-train.png)
+#### Errore_844.png
+![Error](https://i.ibb.co/KjQ1kX1/Errore-844.png)
 ## F-MNIST
 !!! In fase di completamento !!!  
 
