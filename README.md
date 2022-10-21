@@ -5,7 +5,7 @@ Questo progetto è caratterizzato da due fasi:
 
 ### Struttura del progetto
 Il progetto nella repository prevede la seguente oranizzazione:
-- TestDataSet
+* TestDataSet
   * images_output
   * MNIST
   * F-MNIST
