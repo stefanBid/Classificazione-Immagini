@@ -39,7 +39,7 @@ Nella seguente tabella viene mostrato il contenuto siogni cartella o file
 
 La directory `images_output` conterrà una directory creata automticamente per ogni test effettuato e al suo interno avremo la matrice di confusione sul set di train e di test del dataset utilizzato, e le prime 100 immagini del set di test classificate erroneamente.
 
-Se si vuole caricare il progetto manualmente tenere conto della gerarchia sopra mostrata altrimenti è presente nel repository il file `progetto.zip` che permette di caricare autmaticamete il progetto sul proprio IDE (io ho utilizzato [PyCharm](https://www.jetbrains.com/pycharm/)). 
+Se si vuole caricare il progetto manualmente tenere conto della gerarchia sopra mostrata altrimenti scaricare la repository in formato .zip che permette di caricare autmaticamete il progetto sul proprio IDE (io ho utilizzato [PyCharm](https://www.jetbrains.com/pycharm/)). 
 
 
 # Test classificatori su dataset MNIST e F-MNIST
