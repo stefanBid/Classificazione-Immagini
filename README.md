@@ -185,6 +185,19 @@ Al termine dell'addestramento del modello si otterrà una nuova directory in `im
 ![CM_train](https://i.ibb.co/KWqtGSc/CM-train.png)
 #### Errore_844.png
 ![Error](https://i.ibb.co/KjQ1kX1/Errore-844.png)
+
+Infine nel file di testo `Test_History.txt` sarà scritto il nuovo test effettuato con tutte le sue caratteristiche di seguito viene mostrato il formato
+
+- Test del 2022-10-20 20:23:33 MNIST con SVM con kernel (linear)
+	+ Tempo caricamento dataset: 0.036 sec
+	+ Tempo addestramento modello: 7 min
+	+ TRAIN		ACCURANCY: 97.08%
+	+ TEST		ACCURANCY: 94.01%
+	+ TRAIN		MSE: 0.477
+	+ TEST		MSE: 1.019
+
+
+
 ## F-MNIST
 !!! In fase di completamento !!!  
 
