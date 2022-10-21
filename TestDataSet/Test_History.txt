@@ -1,0 +1,129 @@
+**** Storico dei test effettuati ****
+
+- Test del 2022-10-20 15:30:09 MNIST con KNN:
+	+ Tempo caricamento dataset: 0.058 sec
+	+ Tempo addestramento modello: 2 min
+	+ TRAIN		ACCURANCY: 98.19%	LOG LOSS: 0.04385
+	+ TEST		ACCURANCY: 96.88%	LOG LOSS: 0.34854
+	+ TRAIN		MSE: 0.334
+	+ TEST		MSE: 0.628
+
+- Test del 2022-10-20 15:36:26 MNIST con KNN (3):
+	+ Tempo caricamento dataset: 0.043 sec
+	+ Tempo addestramento modello: 1 min
+	+ TRAIN		ACCURANCY: 98.67%	LOG LOSS: 0.02889
+	+ TEST		ACCURANCY: 97.05%	LOG LOSS: 0.46874
+	+ TRAIN		MSE: 0.252
+	+ TEST		MSE: 0.579
+
+- Test del 2022-10-20 15:40:27 MNIST con KNN (10):
+	+ Tempo caricamento dataset: 0.046 sec
+	+ Tempo addestramento modello: 1 min
+	+ TRAIN		ACCURANCY: 97.5%	LOG LOSS: 0.06644
+	+ TEST		ACCURANCY: 96.64%	LOG LOSS: 0.26191
+	+ TRAIN		MSE: 0.465
+	+ TEST		MSE: 0.675
+
+- Test del 2022-10-20 15:45:41 MNIST con KNN (15):
+	+ Tempo caricamento dataset: 0.041 sec
+	+ Tempo addestramento modello: 2 min
+	+ TRAIN		ACCURANCY: 97.1%	LOG LOSS: 0.0814
+	+ TEST		ACCURANCY: 96.33%	LOG LOSS: 0.25532
+	+ TRAIN		MSE: 0.538
+	+ TEST		MSE: 0.726
+
+- Test del 2022-10-20 15:52:17 MNIST con Decision Tree:
+	+ Tempo caricamento dataset: 0.042 sec
+	+ Tempo addestramento modello: 25.498 sec
+	+ TRAIN		ACCURANCY: 100.0%	LOG LOSS: 0.0
+	+ TEST		ACCURANCY: 87.59%	LOG LOSS: 4.28626
+	+ TRAIN		MSE: 0.0
+	+ TEST		MSE: 2.065
+
+- Test del 2022-10-20 15:57:25 MNIST con Decision Tree (prof: 6):
+	+ Tempo caricamento dataset: 0.041 sec
+	+ Tempo addestramento modello: 9.433 sec
+	+ TRAIN		ACCURANCY: 73.82%	LOG LOSS: 0.88477
+	+ TEST		ACCURANCY: 74.15%	LOG LOSS: 0.9041
+	+ TRAIN		MSE: 3.91
+	+ TEST		MSE: 3.739
+
+- Test del 2022-10-20 15:58:38 MNIST con Decision Tree (prof: 17):
+	+ Tempo caricamento dataset: 0.044 sec
+	+ Tempo addestramento modello: 17.635 sec
+	+ TRAIN		ACCURANCY: 99.11%	LOG LOSS: 0.04797
+	+ TEST		ACCURANCY: 87.84%	LOG LOSS: 3.8718
+	+ TRAIN		MSE: 0.162
+	+ TEST		MSE: 2.081
+
+- Test del 2022-10-20 16:02:57 MNIST con Decision Tree (prof: 30):
+	+ Tempo caricamento dataset: 0.04 sec
+	+ Tempo addestramento modello: 24.555 sec
+	+ TRAIN		ACCURANCY: 99.83%	LOG LOSS: 0.01112
+	+ TEST		ACCURANCY: 87.83%	LOG LOSS: 4.12804
+	+ TRAIN		MSE: 0.042
+	+ TEST		MSE: 1.998
+
+- Test del 2022-10-20 16:06:37 MNIST con Random Forest(30/8):
+	+ Tempo caricamento dataset: 0.041 sec
+	+ Tempo addestramento modello: 9.48 sec
+	+ TRAIN		ACCURANCY: 92.74%	LOG LOSS: 0.5547
+	+ TEST		ACCURANCY: 92.16%	LOG LOSS: 0.56231
+	+ TRAIN		MSE: 1.329
+	+ TEST		MSE: 1.388
+
+- Test del 2022-10-20 16:11:13 MNIST con Random Forest(40/16):
+	+ Tempo caricamento dataset: 0.046 sec
+	+ Tempo addestramento modello: 20.532 sec
+	+ TRAIN		ACCURANCY: 99.8%	LOG LOSS: 0.10206
+	+ TEST		ACCURANCY: 96.48%	LOG LOSS: 0.25949
+	+ TRAIN		MSE: 0.043
+	+ TEST		MSE: 0.662
+
+- Test del 2022-10-20 16:13:03 MNIST con Random Forest(35/8):
+	+ Tempo caricamento dataset: 0.052 sec
+	+ Tempo addestramento modello: 11.067 sec
+	+ TRAIN		ACCURANCY: 92.68%	LOG LOSS: 0.55404
+	+ TEST		ACCURANCY: 92.0%	LOG LOSS: 0.56153
+	+ TRAIN		MSE: 1.331
+	+ TEST		MSE: 1.389
+
+- Test del 2022-10-20 16:17:39 MNIST con Random Forest(25/17):
+	+ Tempo caricamento dataset: 0.044 sec
+	+ Tempo addestramento modello: 12.945 sec
+	+ TRAIN		ACCURANCY: 99.83%	LOG LOSS: 0.09484
+	+ TEST		ACCURANCY: 96.21%	LOG LOSS: 0.27808
+	+ TRAIN		MSE: 0.039
+	+ TEST		MSE: 0.703
+
+- Test del 2022-10-20 20:23:33 MNIST con SVM con kernel (linear)
+	+ Tempo caricamento dataset: 0.036 sec
+	+ Tempo addestramento modello: 7 min
+	+ TRAIN		ACCURANCY: 97.08%
+	+ TEST		ACCURANCY: 94.01%
+	+ TRAIN		MSE: 0.477
+	+ TEST		MSE: 1.019
+
+- Test del 2022-10-20 20:44:37 MNIST con SVM con kernel (rbf)
+	+ Tempo caricamento dataset: 0.037 sec
+	+ Tempo addestramento modello: 12 min
+	+ TRAIN		ACCURANCY: 98.99%
+	+ TEST		ACCURANCY: 97.91%
+	+ TRAIN		MSE: 0.196
+	+ TEST		MSE: 0.415
+
+- Test del 2022-10-20 21:17:59 MNIST con SVM con kernel (sigmoid)
+	+ Tempo caricamento dataset: 0.035 sec
+	+ Tempo addestramento modello: 14 min
+	+ TRAIN		ACCURANCY: 77.04%
+	+ TEST		ACCURANCY: 77.57%
+	+ TRAIN		MSE: 3.902
+	+ TEST		MSE: 3.733
+
+- Test del 2022-10-20 21:44:02 MNIST con SVM con kernel (poly)
+	+ Tempo caricamento dataset: 0.037 sec
+	+ Tempo addestramento modello: 7 min
+	+ TRAIN		ACCURANCY: 99.16%
+	+ TEST		ACCURANCY: 97.71%
+	+ TRAIN		MSE: 0.171
+	+ TEST		MSE: 0.459
