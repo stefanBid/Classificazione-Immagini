@@ -29,7 +29,7 @@ Nella seguente tabella viene mostrato il contenuto siogni cartella o file
 
 | **Nome**                      | **Tipo**       | **Descrizione**                                                                                     |
 |-------------------------------|----------------|-----------------------------------------------------------------------------------------------------|
-| TestDataSet**                 | Direcrtory.    | Directory principale del progetto contiene tutte le dir/file sottostanti                            |
+| TestDataSet.                  | Direcrtory.    | Directory principale del progetto contiene tutte le dir/file sottostanti                            |
 | images_output                 | Directory      | Directory contenente i test grafici  generati automaticamente dagli script python                   |
 | test_files                    | Directory      | Directory contenente i file di testo nel quale vengono annotati i risultati dei test                |
 | support                       | Package Python | Package contenente script python di supporto                                                        |
@@ -64,7 +64,6 @@ I classificatori utilizzati sono stati:
 - Foreste Casuali
 - Macchina a vettori di supporto (SVM)
 
-## MNIST
 
 ### Importare il dataset
 Per rendere utilizzabili i dataset MNIST e F-MNIEST, questi sono stati importati nel progetto da locale.
@@ -168,7 +167,6 @@ from sklearn.model_selection import GridSearchCV
 Per l'output grafico invece sono state realizzate delle funzioni ex novo che fanno uso di altre funzioni della libreria `matplotlib`. Per maggiori informazioni sulla libreria [matplotlib](https://matplotlib.org/).
 
 ```python
-
 from support.grafics import printConfMatrix, printErroneusClassificationsMNIST, printErroneusClassificationsFMNIST, printAccGraph, printAccGraphSVM
 ```
 
@@ -184,9 +182,22 @@ from support.grafics import printConfMatrix, printErroneusClassificationsMNIST, 
 Per annotare i risultati dei test nei due file di testo è stata usata una funzione ex novo che fa uso della funzione builtins per la scrittura/lettura dei file offerta da python.
 
 ```python
-
 from support.writer import writeAppend 
 ```
+
+| **Funzione**                                 | **Compito**                                                                                           |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| **writeAppend(...param)**                    | Apre il file specificato tra i parametri e vi scrive al suo interno il testo specificato nei parametri|
+
+Per creare automaticamente le directory è stata usata una funzione ex novo che fa uso della funzione `makedirs(...)` messa a disposizione dalla libreria `os`
+
+```python
+from from support.dirManage import newDirectoryTest 
+```
+
+| **Funzione**                                      | **Compito**                                                                             |
+|---------------------------------------------------|-----------------------------------------------------------------------------------------|
+| **newDirectoryTest(...param)**                    | Crea una nuova directory nel percorso specificato tra i parametri                       |
 
 
 ### Esempio
