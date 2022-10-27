@@ -185,9 +185,9 @@ Per annotare i risultati dei test nei due file di testo è stata usata una funzi
 from support.writer import writeAppend 
 ```
 
-| **Funzione**                                     | **Compito**                                                                                           |
-|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| **writeAppend(...param)**                        | Apre il file specificato tra i parametri e vi scrive al suo interno il testo specificato nei parametri|
+| **Funzione**                | **Compito**                                                                                           |
+|-----------------------------|-------------------------------------------------------------------------------------------------------|
+| **writeAppend(...param)**   | Apre il file specificato tra i parametri e vi scrive al suo interno il testo specificato nei parametri|
 
 Per creare automaticamente le directory è stata usata una funzione ex novo che fa uso della funzione `makedirs(...)` messa a disposizione dalla libreria `os`
 
@@ -195,9 +195,9 @@ Per creare automaticamente le directory è stata usata una funzione ex novo che 
 from from support.dirManage import newDirectoryTest 
 ```
 
-| **Funzione**                                      | **Compito**                                                                                       |
-|---------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| **newDirectoryTest(...param)**                    | Crea una nuova directory nel percorso specificato tra i parametri                                 |
+| **Funzione**                                      | **Compito**                                                        |
+|---------------------------------------------------|--------------------------------------------------------------------|
+| **newDirectoryTest(...param)**                    | Crea una nuova directory nel percorso specificato tra i parametri  |
 
 
 ### Esempio
