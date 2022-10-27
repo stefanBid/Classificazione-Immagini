@@ -7,43 +7,57 @@ Questo progetto è caratterizzato da due fasi:
 Il progetto nella repository prevede la seguente oranizzazione:
 * __TestDataSet__
   * images_output
-  * MNIST
-  * F_MNIST
+  * test_files
   * *__support__*
-    * mnist.py
-    * f_mnist.py
-    * grafics.py
-  * dataMNIST_KNN.py
-  * dataMNIST_decisionTree.py
-  * dataMNIST_randomForest.py
-  * dataMNIST_SVM.py
-  * Test_History.txt
+    * ___init___.py
+    * dirManage.py
+    * dsLoad.py
+    * graphs.py
+    * write.py
+  * decisionTree_classifier.py
+  * decisionTree_classifier_HO.py
+  * KNN_classifier.py
+  * KNN_classifier_HO.py
+  * randomForest_classifier.py
+  * randomForest_classifier_HO.py
+  * SVM_classifier.py
+  * SVM_classifier_HO.py
+  
   
 Nella seguente tabella viene mostrato il contenuto siogni cartella o file  
 
-| Nome elemento             | Tipo          | Contenuto                                                                                                     |
-|---------------------------|---------------|---------------------------------------------------------------------------------------------------------------|
-| TestDataSet               | Directory     | Directory principale del progetto contiene tutte le dir/file sottostanti                                      |
-| images_output             | Directory     | Directory contenente i test grafici  generati automaticamente dagli script python                             |
-| MNIST                     | Directory     | Directory contenete il dataset MNIST compresso                                                                |
-| F_MNIST                   | Directory     | Directory contenente il dataset F-MNIST compresso                                                             |
-| support                   | Directory     | Directory contenete script python con funzioni di supporto per visualizzazioni grafiche e caricamento dataset |
-| mnist.py                  | File Python   | Script per caricare il dataset MNIST                                                                          |
-| f_mnist.py                | File Python   | Script per caricare il dataset F-MNIST                                                                        |
-| grafics.py                | File Python   | Script per visualizzare grafici relativi al modello di addestramento utilizzato                               |
-| dataMNIST_KNN.py          | File Python   | Script per addestrare una K_NN su dataset MNIST                                                               |
-| dataMNIST_decisionTree.py | File Python   | Script per addestrare un albero decisionale su dataset MNIST                                                  |
-| dataMNIST_randomForest.py | File Python   | Script per addestrare una random forest su dataset MNIST                                                      |
-| dataMNIST_SVM.py          | File Python   | Script per addestrare una SVM su dataset MNIST                                                                |
-| Test_History.txt          | File di testo | Contiene il salvataggio di tutti i test effettuati                                                            |
 
-La directory `images_output` conterrà una directory creata automticamente per ogni test effettuato e al suo interno avremo la matrice di confusione sul set di train e di test del dataset utilizzato, e le prime 100 immagini del set di test classificate erroneamente.
+| **Nome**                      | **Tipo**       | **Descrizione**                                                                                     |
+|-------------------------------|----------------|-----------------------------------------------------------------------------------------------------|
+| TestDataSet**                 | Direcrtory.    | Directory principale del progetto contiene tutte le dir/file sottostanti                            |
+| images_output                 | Directory      | Directory contenente i test grafici  generati automaticamente dagli script python                   |
+| test_files                    | Directory      | Directory contenente i file di testo nel quale vengono annotati i risultati dei test                |
+| support                       | Package Python | Package contenente script python di supporto                                                        |
+| decisionTree_classifier.py    | File Python    | Script per addestrare un albero decisionale su dataset MNIST/F-MNIST                                |
+| decisionTree_classifier_HO.py | File Python    | Script per testare gli Iper-parametri dell' albero decisionale per ottenere la maggiore accuratezza |
+| KNN_classifier.py             | File Python    | Script per addestrare una KNN su dataset MNIST/F-MNIST                                              |
+| KNN_classifier_HO.py          | File Python    | Script per testare gli Iper-parametri della KNN per ottenere la maggiore accuratezza                |
+| randomForest_classifier.py    | File Python    | Script per addestrare una foresta randomica su dataset MNIST/F-MNIST                                |
+| randomForest_classifier_HO.py | File Python    | Script per testare gli Iper-parametri della foresta randomica per ottenere la maggiore accuratezza  |
+| SVM_classifier.py             | File Python    | Script per addestrare una SVM su dataset MNIST/F-MNIST                                              |
+| SVM_classifier_HO.py          | File Python    | Script per testare gli Iper-parametri della SVM per ottenere la maggiore accuratezza                |
+
+
+
+La sub-directory `images_output` conterrà a suo interno le directory create automaticamente dagli script nel quale ci saranno i Grafici di accuratezza dei test effettuati sui vari classificatori.  
+
+La sub-directory `test_files`invece conterrà a suo interno i file:
+* `Test_History.txt` : Conterrà i risultati ottenuti dai test effettuati sui classificatori;
+* `HO_History.txt` : Conterrà i risultati ottenutti dai test effettuati combinando i vari Iper-parametri sui classificatori; 
+
 
 Se si vuole caricare il progetto manualmente tenere conto della gerarchia sopra mostrata altrimenti scaricare la repository in formato .zip che permette di caricare autmaticamete il progetto sul proprio IDE (io ho utilizzato [PyCharm](https://www.jetbrains.com/pycharm/)). 
 
 
 # Test classificatori su dataset MNIST e F-MNIST
-In questa sezione si è analizzato l'utilizzo di alcuni dei più famosi classificatori nel ML addestrati sui set di dati MNIST e F-MNIST e i loro risultati sono stati messi a confronto per dedurre quali dei sue dataset sia il più efficiente.
+In questa sezione si è analizzato l'utilizzo di alcuni dei più famosi classificatori nel ML addestrati sui set di dati MNIST e F-MNIST e i loro risultati sono stati messi a confronto per dedurre quali dei due dataset sia il più efficiente, tenendo conto di un importantissimo aspetto ossia che il dataset MNIST sia più semplice di F-MNIST, per approfondire l'argomento visitare la repository di [zalandoresearch](https://github.com/zalandoresearch/fashion-mnist).  
+
+
 I classificatori utilizzati sono stati:
 - K-Neighbors Classifier
 - Alberi decisionali
@@ -53,16 +67,22 @@ I classificatori utilizzati sono stati:
 ## MNIST
 
 ### Importare il dataset
-Per rendere utilizzabile il dataset MNIST, questo è stato importato nel progetto da locale.
-Come prima accennato i file zip contenenti il dataset sono presenti nella cartella `MNIST` e per importali è stata utilizzata la funzione `load_mnist(path="percorso")` presente nello script `mnist.py`
+Per rendere utilizzabili i dataset MNIST e F-MNIEST, questi sono stati importati nel progetto da locale.
+Come prima accennato i file zip contenenti il dataset sono presenti ripesttivamente nelle directtory `data/MNIST` e `data/FMNIST` e per importali sono state utilizzate le funzioni `load_mnist(path="percorso")` e `load_f_mnist_mnist(path="percorso", kind="train")`,  presente nello script `dsLoad.py`.
 
 ```python
-from support.mnist import load_mnist
-X_train, X_test, Y_train, Y_test = load_mnist(path="MNIST")
+from support.mnist import load_mnist, load_f_mnist
+
+# Caricamento dei dati di MNIST all'interno dei vettori di train e di test
+X_train, X_test, Y_train, Y_test = load_mnist(path="data/MNIST")
+
+# Caricamento dei dati di F-MNIST all'interno dei vettori di train e di test
+X_train, Y_train = load_f_mnist(path='data/FMNIST', kind='train')
+X_test, Y_test = load_f_mnist(path='data/FMNIST', kind='t10k')
 ```
 
-### Alcune info sul dataset utilizzato
-Di seguito viene mostrato il blocco di codice utilizzato per ottenere le info utili sul dataset che sono servite poi per effettuare dei test ottimali:
+### Alcune info sui dataset MNIST/F-MNIST
+Di seguito viene mostrato il blocco di codice utilizzato per ottenere le info utili sui dataset che sono servite poi per effettuare dei test ottimali:
 
 ```python
 # sul dataset
@@ -110,7 +130,7 @@ type: uint8
 None  
 
 ### Testare l'accuratezza dei classificatori
-Le API dei classificatori utilizzati per essere addestrati sui set di train e di test sono stati importati dalla libreria `sklearn`. Per maggiori informazioni sulla libreria [sklearn](https://scikit-learn.org/stable/modules/classes.html)
+Le API dei classificatori utilizzati per essere addestrati sui set di train e di test sono stati importati dalla libreria `sklearn`. Per maggiori informazioni sulla libreria [sklearn](https://scikit-learn.org/stable/modules/classes.html).
 ```python
 # Classificatore KNN
 from sklearn.neighbors import KNeighborsClassifier
@@ -137,19 +157,37 @@ from sklearn.metrics import accuracy_score
 
 # Per misurare il modo in cui sono statedeterminate le stime
 from sklearn.metrics import log_loss
+
+# Per mostrare la ripartizione dell'accuratezza tra le varie classi di predizione
+from sklearn.metrics import classification_report
+
+# Per creare il modello che effettua delle stime di predizione combinando vari Iper-parametri
+from sklearn.model_selection import GridSearchCV
 ```
 
-Per l'output grafico invece sono state realizzate le funzioni ex novo `printConfMatrix()`, `printErroneusClassifications()`  che fanno uso di altre funzioni della libreria `matplotlib`. Per maggiori informazioni sulla libreria [matplotlib](https://matplotlib.org/)
+Per l'output grafico invece sono state realizzate delle funzioni ex novo che fanno uso di altre funzioni della libreria `matplotlib`. Per maggiori informazioni sulla libreria [matplotlib](https://matplotlib.org/).
+
 ```python
 
-from support.grafics import printConfMatrix, printErroneusClassifications
+from support.grafics import printConfMatrix, printErroneusClassificationsMNIST, printErroneusClassificationsFMNIST, printAccGraph, printAccGraphSVM
 ```
-| **Funzione**                               | **Compito**                                                                |
-|--------------------------------------------|----------------------------------------------------------------------------|
-| **printConfMatrix(...param)**              | Genera un immagine .png della matrice di confusione su un set di dati      |
-| **printErroneusClassifications(...param)** | Genera le immagini .png dei primi 100 elementi classificati in modo errato |
 
-(Successive funzioni sono in fase di creazione per avere un quadro più chiaro e dettagliato del modello testato)
+| **Funzione**                                     | **Compito**                                                                           |
+|--------------------------------------------------|---------------------------------------------------------------------------------------|
+| **printConfMatrix(...param)**                    | Genera un immagine .png della matrice di confusione su un set di dati                 |
+| **printErroneusClassificationsMNIST(...param)**  | Genera le immagini .png dei primi 100 elementi classificati in modo errato su MNIST   |
+| **printErroneusClassificationsFMNIST(...param)** | Genera le immagini .png dei primi 100 elementi classificati in modo errato su F-MNIST |
+| **printErroneusClassificationsFMNIST(...param)** | Genera le immagini .png dei primi 100 elementi classificati in modo errato su F-MNIST |
+| **printAccGraph(...param)**                      | Genera un immagine .png del grafico di accuratezza tra train set e test set           |
+| **printAccGraphSVM(...param)**                   | Genera un immagine .png del grafico di accuratezza tra train set e test set per SVM   |
+
+Per annotare i risultati dei test nei due file di testo è stata usata una funzione ex novo che fa uso della funzione builtins per la scrittura/lettura dei file offerta da python.
+
+```python
+
+from support.writer import writeAppend 
+```
+
 
 ### Esempio
 *Qui di seguito viene riportato un esempio di ciò che si ottiene dall'esecuzione di uno degli script python. L'esempio preso in cosiderazione è un test effettuato il 20/10/2022 terminato alle ore 20:35*
@@ -195,11 +233,6 @@ Infine nel file di testo `Test_History.txt` sarà scritto il nuovo test effettua
 	+ TEST		ACCURANCY: 94.01%
 	+ TRAIN		MSE: 0.477
 	+ TEST		MSE: 1.019
-
-
-
-## F-MNIST
-!!! In fase di completamento !!!  
 
 
 # Test Reti Neurali su dataset MNIST e F-MNIST
