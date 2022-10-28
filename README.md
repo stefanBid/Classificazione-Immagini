@@ -239,8 +239,9 @@ Al termine dell'addestramento del modello si otterranno due nuove directory in `
 Infine nei file di testo `Test_History.txt` e `Test_History.txt` sarà scritto il nuovo test effettuato con tutte le sue caratteristiche di seguito viene mostrato il formato:
 
 
-DT su F_MNIST
-	'Il tasso di accuratezza si aggirerà intorno al : 81.48%'
+DT su F_MNIST  
+
+	Il tasso di accuratezza si aggirerà intorno al : 81.48%
 
 
    | **i**  | **mean_fit_time** | **std_fit_time** | **mean_score_time** | **std_score_time** | **param_criterion** | **param_max_depth** | **param_max_features** | **param_min_samples_leaf** | **...** |
@@ -256,33 +257,34 @@ DT su F_MNIST
 
 
 
-- Test del 2022-10-27 12:52:16 F_MNIST con Decision Tree (profondità: 13, c: gini, mf: 0.5, msl: 1):
+- Test del 2022-10-27 12:52:16 F_MNIST con Decision Tree (profondità: 13, c: gini, mf: 0.5, msl: 1): 
+-
 
-	+ Tempo caricamento dataset: 0.457 sec
-	+ Tempo addestramento modello: 15.118 sec
-	+ TRAIN		ACCURANCY: 89.89%	LOG LOSS: 0.30497
-	+ TEST		ACCURANCY: 80.52%	LOG LOSS: 2.44365
-	+ TRAIN		MSE: 1.126
-	+ TEST		MSE: 2.38
+	 + Tempo caricamento dataset: 0.457 sec
+	 + Tempo addestramento modello: 15.118 sec
+	 + TRAIN		ACCURANCY: 89.89%	LOG LOSS: 0.30497
+	 + TEST		ACCURANCY: 80.52%	LOG LOSS: 2.44365
+	 + TRAIN		MSE: 1.126
+	 + TEST		MSE: 2.38
 
-	+ Report di classificazione
+Report di classificazione
 
-              precision    recall  f1-score   support
-
-           0       0.76      0.77      0.76      1000
-           1       0.96      0.93      0.95      1000
-           2       0.67      0.68      0.68      1000
-           3       0.82      0.82      0.82      1000
-           4       0.63      0.72      0.67      1000
-           5       0.93      0.89      0.91      1000
-           6       0.58      0.52      0.55      1000
-           7       0.87      0.91      0.89      1000
-           8       0.93      0.91      0.92      1000
-           9       0.91      0.91      0.91      1000
-
-    accuracy                           0.81     10000
-   macro avg       0.81      0.81      0.81     10000
-weighted avg       0.81      0.81      0.81     10000
+| ****             | **precision** | **recall** | ** f1-score** | **support** |
+|------------------|---------------|------------|---------------|-------------|
+| **0**            | 0.76          | 0.77       | 0.76          | 1000        |
+| **1**            | 0.96          | 0.93       | 0.95          | 1000        |
+| **2**            | 0.67          | 0.68       | 0.68          | 1000        |
+| **3**            | 0.82          | 0.82       | 0.82          | 1000        |
+| **4**            | 0.63          | 0.72       | 0.67          | 1000        |
+| **5**            | 0.93          | 0.89       | 0.91          | 1000        |
+| **6**            | 0.58          | 0.52       | 0.55          | 1000        |
+| **7**            | 0.87          | 0.91       | 0.89          | 1000        |
+| **8**            | 0.93          | 0.91       |  0.92         | 1000        |
+| **9**            | 0.91          | 0.91       | 0.91          | 1000        |
+| **null**         |               |            |               |             |
+| **accuracy**     |               |            | 0.81          | 10000       |
+| **macro avg**    | 0.81          | 0.81       | 0.81          | 10000       |
+| **weighted avg** | 0.81          | 0.81       | 0.81          | 10000       |
 
 
 
