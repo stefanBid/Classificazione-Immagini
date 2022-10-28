@@ -243,12 +243,13 @@ DT su F_MNIST
 	Il tasso di accuratezza si aggirerà intorno al : 81.48%
 
 
-    mean_fit_time  std_fit_time  mean_score_time  std_score_time param_criterion param_max_depth param_max_features param_min_samples_leaf                                                                                   
-33      15.865796      0.390363         0.102328        0.043465            gini              13                0.5                      1    ...   
-69      15.163894      0.119052         0.109759        0.044534         entropy              11                0.5                      1    ...
-75      17.007989      0.223998         0.084056        0.026826         entropy              13                0.5                      1    ...
-73      28.103232      0.153905         0.080878        0.015820         entropy              13               None                     25    ...      
-30      28.223590      0.221354         0.066648        0.004398            gini              13               None                      1    ...  
+   | **i**  | **mean_fit_time** | **std_fit_time** | **mean_score_time** | **std_score_time** | **param_criterion** | **param_max_depth** | **param_max_features** | **param_min_samples_leaf** | **...** |
+|--------|-------------------|------------------|---------------------|--------------------|---------------------|---------------------|------------------------|----------------------------|---------|
+| **33** | 15.865796         | 0.390363         | 0.102328            | 0.043465           | gini                | 13                  | 0.5                    | 1                          | ...     |
+| **69** | 15.163894         | 0.119052         | 0.109759            | 0.044534           | entropy             | 11                  | 0.5                    | 1                          | ...     |
+| **75** | 17.007989         | 0.223998         | 0.084056            | 0.026826           | entropy             | 13                  | 0.5                    | 1                          | ...     |
+| **73** | 28.103232         | 0.153905         | 0.080878            | 0.015820           | entropy             | 13                  | None                   | 25                         | ...     |
+| **30** | 28.223590         | 0.221354         | 0.066648            | 0.004398           | gini                | 13                  | None                   | 1                          | ...     |
 
 	Migliori Iper-parametri: {'criterion': 'gini', 'max_depth': 13, 'max_features': 0.5, 'min_samples_leaf': 1}
 
