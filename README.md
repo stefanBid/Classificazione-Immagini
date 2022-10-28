@@ -240,7 +240,7 @@ Infine nei file di testo `Test_History.txt` e `Test_History.txt` sarà scritto i
 
 
 DT su F_MNIST
-	Il tasso di accuratezza si aggirerà intorno al : 81.48%
+	'Il tasso di accuratezza si aggirerà intorno al : 81.48%'
 
 
    | **i**  | **mean_fit_time** | **std_fit_time** | **mean_score_time** | **std_score_time** | **param_criterion** | **param_max_depth** | **param_max_features** | **param_min_samples_leaf** | **...** |
