@@ -200,50 +200,89 @@ from from support.dirManage import newDirectoryTest
 | **newDirectoryTest(...param)**                    | Crea una nuova directory nel percorso specificato tra i parametri  |
 
 
-### Esempio
-*Qui di seguito viene riportato un esempio di ciò che si ottiene dall'esecuzione di uno degli script python. L'esempio preso in cosiderazione è un test effettuato il 20/10/2022 terminato alle ore 20:35*
-L'esempio prevede l'esecuzione dello script `dataMNIST_SVM.py`  
+### Script di testing vs Script di ottimizzazione 
 
+Come si può evincere dalla tabella che schematizza la [struttura del progetto](#struttura-del-progetto) esistono due tipologie di script:
+1) [nome_classificatore]_classifier_HO.py: Dato un dizionario di Iper-parametri, scelti accuratamente tra tutti i possibili perche influiscono su accuratezza e tempi di addestramento del modello, simula diversi test combinando questi ultimi e li organizza in modo decrescente in termini di accuratezza in un dataFrame. I risultati possono essere consultati sul file di tetso destinato ad annotarli e infine genera un grafo che mostra l'accuratezza del set di train e di test in base al parametro che più influisce sull'accuratezza.
+2) [nome_classificatore]_classifier.py: Testa l'accuratezza del classificatore dopo aver settato manualmente i sui iper-parametri annotando nel file relativo allo storico dei test i risultati otenuti, la generazione automatica della matrice di confusione per individuare eventuale errori di   classificazione e infine la generazione automatica dei 100 elementi classificati erroneamente;
 > [NB]
-> Gli script forniscono un implementazione generale del modello, tuttavia si possno modificare i parametri del modello al momento della sua creazione per ottenere risultati differenti.
+> Per un'ottima esperienza è bene eseguire lo script 1 e poi successivamente lo script 2, settando i parametri in base alle combinazioni ottenute dal primo script.
 
-Nel caso del nostro esempio:
-```python
-# Su una macchina a vettori di supporto si possono utilizzare diverse funzioni kernerl
-kf = ["linear", "rbf", "sigmoid", "poly"]
-i = 1  # Modifica il suo valore tra 0 e 3 per scegliere una funzione
-svm = SVC(kernel=kf[i])
-```
+*Qui di seguito vengono riportati due esempi di esecuzuione uno per ogni tipologia di script*
+L'esempio prevede l'esecuzione dello script `decisionTree_classifier_HO.py` e `decisionTree_classifier.py` per un test del 27/10/2022 alle ore 12:52 sul set di dati F-MNIST.
 
-Al termine dell'addestramento del modello si otterrà una nuova directory in `images_output`  che avrà la seguente sintassi `TEST_MNIST_nomModello_dataTest` nel nostro caso:  
+Al termine dell'addestramento del modello si otterranno due nuove directory in `images_output`:
 
 * images_output
   * ... altri TEST
-  * TEST_MNIST_SVM_2022_10_20_20_35_38
+  * *Hyperparameter_Tuning_F_MNIST_DT_2022_10_27_12_52_16*
+    * Accurancy_Graphic
+       * Accurancy_Graph.png
+  * *TEST_F_MNIST_DT_2022_10_27_12_52_16*
     * Confusion_Matrix
        * CM_test.png
        * CM_train.png
     * Erroneus_Classifications 
        * ... 
-       * Errore_844.png
+       * Errore_444.png
        * ...
-
+       
+#### Accurancy_Graph.png
+![Accurancy_Graph](https://i.ibb.co/60Q7bMY/Accurancy-Graph.png)
 #### CM_test.png
-![CM_test](https://i.ibb.co/Sx5Gw92/CM-test.png)
+![CM_test](https://i.ibb.co/wyPSGTX/CM-test.png)
 #### CM_train.png
-![CM_train](https://i.ibb.co/KWqtGSc/CM-train.png)
-#### Errore_844.png
-![Error](https://i.ibb.co/KjQ1kX1/Errore-844.png)
+![CM_train](https://i.ibb.co/WnYTtpd/CM-train.png)
+#### Errore_444.png
+![Error](https://i.ibb.co/HDL8ZHz/Errore-444.png)
 
-Infine nel file di testo `Test_History.txt` sarà scritto il nuovo test effettuato con tutte le sue caratteristiche di seguito viene mostrato il formato
+Infine nei file di testo `Test_History.txt` e `Test_History.txt` sarà scritto il nuovo test effettuato con tutte le sue caratteristiche di seguito viene mostrato il formato:
 
-- Test del 2022-10-20 20:23:33 MNIST con SVM con kernel (linear)
-	+ Tempo caricamento dataset: 0.036 sec
-	+ Tempo addestramento modello: 7 min
-	+ TRAIN		ACCURANCY: 97.08%
-	+ TEST		ACCURANCY: 94.01%
-	+ TRAIN		MSE: 0.477
-	+ TEST		MSE: 1.019
+
+DT su F_MNIST
+	Il tasso di accuratezza si aggirerà intorno al : 81.48%
+
+
+    mean_fit_time  std_fit_time  mean_score_time  std_score_time param_criterion param_max_depth param_max_features param_min_samples_leaf                                                                                   
+33      15.865796      0.390363         0.102328        0.043465            gini              13                0.5                      1    ...   
+69      15.163894      0.119052         0.109759        0.044534         entropy              11                0.5                      1    ...
+75      17.007989      0.223998         0.084056        0.026826         entropy              13                0.5                      1    ...
+73      28.103232      0.153905         0.080878        0.015820         entropy              13               None                     25    ...      
+30      28.223590      0.221354         0.066648        0.004398            gini              13               None                      1    ...  
+
+	Migliori Iper-parametri: {'criterion': 'gini', 'max_depth': 13, 'max_features': 0.5, 'min_samples_leaf': 1}
+
+
+
+
+- Test del 2022-10-27 12:52:16 F_MNIST con Decision Tree (profondità: 13, c: gini, mf: 0.5, msl: 1):
+
+	+ Tempo caricamento dataset: 0.457 sec
+	+ Tempo addestramento modello: 15.118 sec
+	+ TRAIN		ACCURANCY: 89.89%	LOG LOSS: 0.30497
+	+ TEST		ACCURANCY: 80.52%	LOG LOSS: 2.44365
+	+ TRAIN		MSE: 1.126
+	+ TEST		MSE: 2.38
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.76      0.77      0.76      1000
+           1       0.96      0.93      0.95      1000
+           2       0.67      0.68      0.68      1000
+           3       0.82      0.82      0.82      1000
+           4       0.63      0.72      0.67      1000
+           5       0.93      0.89      0.91      1000
+           6       0.58      0.52      0.55      1000
+           7       0.87      0.91      0.89      1000
+           8       0.93      0.91      0.92      1000
+           9       0.91      0.91      0.91      1000
+
+    accuracy                           0.81     10000
+   macro avg       0.81      0.81      0.81     10000
+weighted avg       0.81      0.81      0.81     10000
+
 
 
 # Test Reti Neurali su dataset MNIST e F-MNIST
