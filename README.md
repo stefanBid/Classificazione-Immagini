@@ -6,6 +6,7 @@ Questo progetto è caratterizzato da due fasi:
 ### Struttura del progetto
 Il progetto nella repository prevede la seguente oranizzazione:
 * __TestDataSet__
+  * data
   * images_output
   * test_files
   * *__support__*
@@ -29,7 +30,8 @@ Nella seguente tabella viene mostrato il contenuto siogni cartella o file
 
 | **Nome**                      | **Tipo**       | **Descrizione**                                                                                     |
 |-------------------------------|----------------|-----------------------------------------------------------------------------------------------------|
-| TestDataSet.                  | Direcrtory.    | Directory principale del progetto contiene tutte le dir/file sottostanti                            |
+| TestDataSet                   | Direcrtory     | Directory principale del progetto contiene tutte le dir/file sottostanti                            |
+| data                          | Direcrtory     | Directory contenete i due dataset sul quale si effettuano i test MNIST F-MNIST                      |
 | images_output                 | Directory      | Directory contenente i test grafici  generati automaticamente dagli script python                   |
 | test_files                    | Directory      | Directory contenente i file di testo nel quale vengono annotati i risultati dei test                |
 | support                       | Package Python | Package contenente script python di supporto                                                        |
@@ -67,7 +69,7 @@ I classificatori utilizzati sono stati:
 
 ### Importare il dataset
 Per rendere utilizzabili i dataset MNIST e F-MNIEST, questi sono stati importati nel progetto da locale.
-Come prima accennato i file zip contenenti il dataset sono presenti ripesttivamente nelle directtory `data/MNIST` e `data/FMNIST` e per importali sono state utilizzate le funzioni `load_mnist(path="percorso")` e `load_f_mnist_mnist(path="percorso", kind="train")`,  presente nello script `dsLoad.py`.
+Come prima accennato i file zip contenenti il dataset sono presenti rispettivamente nelle directory `data/MNIST` e `data/FMNIST` e per importarli sono state utilizzate le funzioni `load_mnist(path="percorso")` e `load_f_mnist_mnist(path="percorso", kind="train")`,  presente nello script `dsLoad.py`.
 
 ```python
 from support.mnist import load_mnist, load_f_mnist
@@ -86,7 +88,7 @@ Di seguito viene mostrato il blocco di codice utilizzato per ottenere le info ut
 ```python
 # sul dataset
 
-# dimensioni del set di tarin
+# dimensioni del set di train
 print("Dimensions TRAIN SET: ",X_train.shape, "\n")
 print("Dimensions TEST SET: ",X_test.shape, "\n")
 
@@ -208,7 +210,7 @@ Come si può evincere dalla tabella che schematizza la [struttura del progetto](
 > [NB]
 > Per un'ottima esperienza è bene eseguire lo script 1 e poi successivamente lo script 2, settando i parametri in base alle combinazioni ottenute dal primo script.
 
-*Qui di seguito vengono riportati due esempi di esecuzuione uno per ogni tipologia di script*
+*Qui di seguito vengono riportati due esempi di esecuzione uno per ogni tipologia di script*
 L'esempio prevede l'esecuzione dello script `decisionTree_classifier_HO.py` e `decisionTree_classifier.py` per un test del 27/10/2022 alle ore 12:52 sul set di dati F-MNIST.
 
 Al termine dell'addestramento del modello si otterranno due nuove directory in `images_output`:
@@ -262,9 +264,9 @@ DT su F_MNIST
 
 	 + Tempo caricamento dataset: 0.457 sec
 	 + Tempo addestramento modello: 15.118 sec
-	 + TRAIN		ACCURANCY: 89.89%	LOG LOSS: 0.30497
+	 + TRAIN	ACCURANCY: 89.89%	LOG LOSS: 0.30497
 	 + TEST		ACCURANCY: 80.52%	LOG LOSS: 2.44365
-	 + TRAIN		MSE: 1.126
+	 + TRAIN	MSE: 1.126
 	 + TEST		MSE: 2.38
 
 Report di classificazione
