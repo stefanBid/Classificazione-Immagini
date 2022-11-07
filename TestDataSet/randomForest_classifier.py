@@ -38,7 +38,7 @@ logging.basicConfig(format='%(asctime)s * %(message)s',
 ****************************************************************
 """
 
-choice = 1
+choice = 0
 datasetType = ['MNIST', 'F_MNIST']
 
 
@@ -60,14 +60,14 @@ file = "test_files/Test_History.txt"
 
 
 # Parametri con cui è possibile addestrare la rete
-k = 24  # profondità massima -> influisce sull'accuratezza
-ind_c = 0  # Indice array c
-ind_mss = 0  # Indice array mss
-ind_ne = 4  # Indice array ne
+k = 21  # profondità massima -> influisce sull'accuratezza
+ind_c = 1  # Indice array c
+ind_mss = 2  # Indice array mss
+ind_ne = 5  # Indice array ne
 
 c = ["gini", "entropy"]  # Criterion
-mss = [5, 10]  # Min samples split
-ne = [20, 65, 110, 155, 200]  # n_estimators
+mss = [2, 5, 10]  # Min samples split
+ne = [100, 120, 140, 160, 180, 200, 220]  # n_estimators
 
 
 def over_under_fitting_controls(*, Y, Y_predicts):
@@ -111,7 +111,11 @@ writeAppend(filename=file,
 
 
 # Creazione del modello
-rf = RandomForestClassifier(criterion=c[ind_c], max_depth=k, n_estimators=ne[ind_ne], min_samples_leaf=mss[ind_mss])
+rf = RandomForestClassifier(criterion=c[ind_c],
+                            max_depth=k,
+                            n_estimators=ne[ind_ne],
+                            min_samples_leaf=mss[ind_mss],
+                            random_state=0)
 
 
 logging.info("INIZIO ADDESTRAMENTO DEL MODELLO!")

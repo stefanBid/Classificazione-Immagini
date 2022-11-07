@@ -99,9 +99,10 @@ def printErroneusClassificationsFMNIST(*, namDir, data, target, predict):
     logging.info("TUTTE LE IMMAGINI DEI TEST ERRATI SONO STATE CREATE!")
 
 
-def printAccGraph(*, namDir, acc, rang, titGraf='Range', n_x_label='Range'):
+def printAccGraph(*, namDir, acc, rang, titGraf='Range', n_x_label='Range', stp=None ):
     """
     Fornisce la rappresentazione grafica delle accuratezze in base al range di valutazione
+    :param stp: Quanti salti deve fare un valore all'altro sull'asse delle x
     :param titGraf: Titolo del grafo in forma: Accuratezza per titGraf
     :param n_x_label: Nome dell'x_label
     :param namDir: Nome della cartella che conterrà le foto
@@ -109,10 +110,12 @@ def printAccGraph(*, namDir, acc, rang, titGraf='Range', n_x_label='Range'):
     :param rang: Range di valutazione
     :return: immagine .jpg della rappresentazione grafica delle accuratezze in base al range di valutazione
     """
+    if stp is None:
+        stp = 1.0
 
-    loc = np.arange(1, rang + 1, step=1.0)
-    line1, = plt.plot(range(1, rang+1), acc[1], 'b', label='Train accuracy')
-    line2, = plt.plot(range(1, rang+1), acc[0], 'r', label='Test accuracy')
+    loc = np.arange(stp, rang + 1, step=stp)
+    line1, = plt.plot(range(int(stp), rang+1, int(stp)), acc[1], 'b', label='Train accuracy')
+    line2, = plt.plot(range(int(stp), rang+1, int(stp)), acc[0], 'r', label='Test accuracy')
     plt.xticks(loc)
     plt.legend(handler_map={line1: HandlerLine2D(numpoints=2)})
     plt.title(f"Accuratezza per {titGraf}")

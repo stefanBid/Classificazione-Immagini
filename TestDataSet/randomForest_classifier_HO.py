@@ -36,7 +36,7 @@ logging.basicConfig(format='%(asctime)s - %(message)s',
 ****************************************************************
 """
 
-choice = 1
+choice = 0
 datasetType = ['MNIST', 'F_MNIST']
 
 
@@ -45,15 +45,20 @@ datasetType = ['MNIST', 'F_MNIST']
 # Directory principale per il test
 prDir = f"RF/Hyperparameter_Tuning_{datasetType[choice]}_RF_{time.strftime('%Y_%m_%d_%H_%M_%S', time.localtime())}"
 # Sub directory per il test
-subDir1 = "Accurancy_Graphic"
+subDir1 = "Accurancy_Graphic_pro"
+subDir2 = "Accurancy_Graphic_pop"
 
 # Creazione delle directory per l'ottimizzazione dei parametri
 newDirectoryTest(principal=prDir,
-                 sub=[subDir1])
+                 sub=[subDir1, subDir2])
 
 
-# Profondità dell'albero decisionale
+# Profondità max dell'albero decisionale
 k = 21
+
+# Popolazione max della foresta
+p = 200
+
 
 # Titolo del documento in cui salvare le informazioni
 file = "test_files/HO_History.txt"
@@ -84,7 +89,7 @@ test_acc = np.zeros(k)
 logging.info("INIZIO SEQUENZA DI ADDESTRAMENTO PER PROFONDITA:")
 
 for i in range(1, k+1):
-    dt = RandomForestClassifier(max_depth=i).fit(X_train, Y_train)
+    dt = RandomForestClassifier(max_depth=i, random_state=0).fit(X_train, Y_train)
     Y_predict_test = dt.predict(X_test)
     Y_predict_train = dt.predict(X_train)
     test_acc[i - 1] = round((accuracy_score(Y_test, Y_predict_test) * 100), 2)
@@ -102,13 +107,40 @@ printAccGraph(namDir=f"{prDir}/{subDir1}",
               n_x_label='Massima profondità')
 
 
+# Calcolo accuratezza in base alla popolazione
+train_acc1 = np.zeros(int(p/20))
+test_acc1 = np.zeros(int(p/20))
+
+logging.info("INIZIO SEQUENZA DI ADDESTRAMENTO PER POPOLAZIONE DI ALBERI:")
+z = 1
+for j in range(20, p+1, 20):
+    dt = RandomForestClassifier(n_estimators=j, random_state=0).fit(X_train, Y_train)
+    Y_predict_test = dt.predict(X_test)
+    Y_predict_train = dt.predict(X_train)
+    test_acc1[z - 1] = round((accuracy_score(Y_test, Y_predict_test) * 100), 2)
+    train_acc1[z - 1] = round((accuracy_score(Y_train, Y_predict_train) * 100), 2)
+    z = z + 1
+    logging.info(f"FINE ADDESTRAMENTO DEL MODELLO CON POPOLAZIONE {j}")
+
+logging.info("FINE SEQUENZA DI ADDESTRAMENTO")
+
+
+# Creazione del grafico
+printAccGraph(namDir=f"{prDir}/{subDir2}",
+              acc=[test_acc1, train_acc1],
+              rang=p,
+              stp=20.0,
+              titGraf="popolazione alberi",
+              n_x_label='Popolazione Alberi')
+
+
 # Dizionario degli Iper-parametri sul quale effettuare i test
-grid_params = {'n_estimators': [int(x) for x in np.linspace(start=20, stop=200, num=5)],
-               'max_depth': [int(x) for x in np.linspace(1, 24, num=3)],
-               'min_samples_split': [5, 10],
+grid_params = {'n_estimators': [20, 40, 60, 80, 100, 120, 140, 160, 180, 200],
+               'max_depth': [3, 5, 7, 9, 11, 13, 15, 17, 21],
+               'min_samples_split': [2, 5, 10],
                'criterion': ["gini", "entropy"]}
 
-gs = GridSearchCV(RandomForestClassifier(),
+gs = GridSearchCV(RandomForestClassifier(random_state=0),
                   grid_params,
                   verbose=1,
                   cv=4,
@@ -136,7 +168,7 @@ writeAppend(filename=file,
             text=f"\tIl tasso di accuratezza si aggirerà attorno al : {round(g_res.best_score_ * 100, 2)}%\n\n")
 
 writeAppend(filename=file,
-            text=score_df.nlargest(5, "mean_test_score"))
+            text=score_df.nlargest(10, "mean_test_score", keep='last'))
 
 writeAppend(filename=file,
             text=f"\n\n\tMigliori Iper-parametri: {g_res.best_params_}")
