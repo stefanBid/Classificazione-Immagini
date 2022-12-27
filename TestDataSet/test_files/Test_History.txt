@@ -1,1 +1,1222 @@
 **** Storico dei test effettuati ****
+
+
+- Test del 2022-11-13 12:12:52 F_MNIST con MLP(hidden layer: 1, a: tanh, s: adam, lr: adaptive, m: 200):
+
+	+ Tempo caricamento dataset: 0.633 sec
+	+ Tempo addestramento modello: 4 min
+	+ TRAIN		ACCURANCY: 99.74%	LOG LOSS: 0.00993
+	+ TEST		ACCURANCY: 88.78%	LOG LOSS: 0.63214
+	+ TRAIN		MSE: 0.041
+	+ TEST		MSE: 1.599
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.84      0.81      0.82      1000
+           1       0.98      0.98      0.98      1000
+           2       0.77      0.84      0.80      1000
+           3       0.91      0.89      0.90      1000
+           4       0.81      0.80      0.81      1000
+           5       0.98      0.96      0.97      1000
+           6       0.71      0.70      0.71      1000
+           7       0.95      0.97      0.96      1000
+           8       0.97      0.97      0.97      1000
+           9       0.96      0.97      0.96      1000
+
+    accuracy                           0.89     10000
+   macro avg       0.89      0.89      0.89     10000
+weighted avg       0.89      0.89      0.89     10000
+
+
+- Test del 2022-11-13 12:21:39 F_MNIST con MLP(hidden layer: 2, a: tanh, s: adam, lr: adaptive, m: 200):
+
+	+ Tempo caricamento dataset: 0.42 sec
+	+ Tempo addestramento modello: 3 min
+	+ TRAIN		ACCURANCY: 99.66%	LOG LOSS: 0.01108
+	+ TEST		ACCURANCY: 89.54%	LOG LOSS: 0.59192
+	+ TRAIN		MSE: 0.032
+	+ TEST		MSE: 1.48
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.85      0.83      0.84      1000
+           1       0.99      0.98      0.99      1000
+           2       0.83      0.82      0.83      1000
+           3       0.91      0.88      0.90      1000
+           4       0.80      0.84      0.82      1000
+           5       0.97      0.97      0.97      1000
+           6       0.73      0.74      0.73      1000
+           7       0.95      0.96      0.96      1000
+           8       0.97      0.97      0.97      1000
+           9       0.96      0.96      0.96      1000
+
+    accuracy                           0.90     10000
+   macro avg       0.90      0.90      0.90     10000
+weighted avg       0.90      0.90      0.90     10000
+
+
+- Test del 2022-11-13 12:32:09 F_MNIST con MLP(hidden layer: 3, a: tanh, s: adam, lr: adaptive, m: 200):
+
+	+ Tempo caricamento dataset: 0.414 sec
+	+ Tempo addestramento modello: 5 min
+	+ TRAIN		ACCURANCY: 88.26%	LOG LOSS: 0.37959
+	+ TEST		ACCURANCY: 85.21%	LOG LOSS: 0.55682
+	+ TRAIN		MSE: 1.548
+	+ TEST		MSE: 1.88
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.83      0.77      0.80      1000
+           1       0.97      0.96      0.97      1000
+           2       0.67      0.81      0.74      1000
+           3       0.85      0.88      0.86      1000
+           4       0.75      0.75      0.75      1000
+           5       0.95      0.94      0.94      1000
+           6       0.68      0.60      0.64      1000
+           7       0.91      0.94      0.93      1000
+           8       0.96      0.94      0.95      1000
+           9       0.95      0.92      0.94      1000
+
+    accuracy                           0.85     10000
+   macro avg       0.85      0.85      0.85     10000
+weighted avg       0.85      0.85      0.85     10000
+
+
+- Test del 2022-11-13 12:43:44 F_MNIST con MLP(hidden layer: 4, a: tanh, s: adam, lr: adaptive, m: 200):
+
+	+ Tempo caricamento dataset: 0.454 sec
+	+ Tempo addestramento modello: 5 min
+	+ TRAIN		ACCURANCY: 98.94%	LOG LOSS: 0.02856
+	+ TEST		ACCURANCY: 88.84%	LOG LOSS: 0.65385
+	+ TRAIN		MSE: 0.103
+	+ TEST		MSE: 1.544
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.84      0.83      0.84      1000
+           1       0.98      0.97      0.98      1000
+           2       0.78      0.83      0.80      1000
+           3       0.87      0.93      0.90      1000
+           4       0.87      0.76      0.81      1000
+           5       0.98      0.96      0.97      1000
+           6       0.70      0.73      0.72      1000
+           7       0.94      0.96      0.95      1000
+           8       0.98      0.97      0.97      1000
+           9       0.96      0.96      0.96      1000
+
+    accuracy                           0.89     10000
+   macro avg       0.89      0.89      0.89     10000
+weighted avg       0.89      0.89      0.89     10000
+
+
+- Test del 2022-11-13 13:13:00 F_MNIST con MLP(hidden layer: 4, a: tanh, s: adam, lr: constant, m: 200):
+
+	+ Tempo caricamento dataset: 0.503 sec
+	+ Tempo addestramento modello: 6 min
+	+ TRAIN		ACCURANCY: 98.94%	LOG LOSS: 0.02856
+	+ TEST		ACCURANCY: 88.84%	LOG LOSS: 0.65385
+	+ TRAIN		MSE: 0.103
+	+ TEST		MSE: 1.544
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.84      0.83      0.84      1000
+           1       0.98      0.97      0.98      1000
+           2       0.78      0.83      0.80      1000
+           3       0.87      0.93      0.90      1000
+           4       0.87      0.76      0.81      1000
+           5       0.98      0.96      0.97      1000
+           6       0.70      0.73      0.72      1000
+           7       0.94      0.96      0.95      1000
+           8       0.98      0.97      0.97      1000
+           9       0.96      0.96      0.96      1000
+
+    accuracy                           0.89     10000
+   macro avg       0.89      0.89      0.89     10000
+weighted avg       0.89      0.89      0.89     10000
+
+
+- Test del 2022-11-13 13:22:22 F_MNIST con MLP(hidden layer: 1, a: tanh, s: adam, lr: constant, m: 200):
+
+	+ Tempo caricamento dataset: 0.422 sec
+	+ Tempo addestramento modello: 4 min
+	+ TRAIN		ACCURANCY: 99.74%	LOG LOSS: 0.00993
+	+ TEST		ACCURANCY: 88.78%	LOG LOSS: 0.63214
+	+ TRAIN		MSE: 0.041
+	+ TEST		MSE: 1.599
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.84      0.81      0.82      1000
+           1       0.98      0.98      0.98      1000
+           2       0.77      0.84      0.80      1000
+           3       0.91      0.89      0.90      1000
+           4       0.81      0.80      0.81      1000
+           5       0.98      0.96      0.97      1000
+           6       0.71      0.70      0.71      1000
+           7       0.95      0.97      0.96      1000
+           8       0.97      0.97      0.97      1000
+           9       0.96      0.97      0.96      1000
+
+    accuracy                           0.89     10000
+   macro avg       0.89      0.89      0.89     10000
+weighted avg       0.89      0.89      0.89     10000
+
+
+- Test del 2022-11-13 13:35:03 F_MNIST con MLP(hidden layer: 2, a: tanh, s: adam, lr: constant, m: 200):
+
+	+ Tempo caricamento dataset: 0.426 sec
+	+ Tempo addestramento modello: 4 min
+	+ TRAIN		ACCURANCY: 99.66%	LOG LOSS: 0.01108
+	+ TEST		ACCURANCY: 89.54%	LOG LOSS: 0.59192
+	+ TRAIN		MSE: 0.032
+	+ TEST		MSE: 1.48
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.85      0.83      0.84      1000
+           1       0.99      0.98      0.99      1000
+           2       0.83      0.82      0.83      1000
+           3       0.91      0.88      0.90      1000
+           4       0.80      0.84      0.82      1000
+           5       0.97      0.97      0.97      1000
+           6       0.73      0.74      0.73      1000
+           7       0.95      0.96      0.96      1000
+           8       0.97      0.97      0.97      1000
+           9       0.96      0.96      0.96      1000
+
+    accuracy                           0.90     10000
+   macro avg       0.90      0.90      0.90     10000
+weighted avg       0.90      0.90      0.90     10000
+
+
+- Test del 2022-11-13 14:33:08 F_MNIST con MLP(hidden layer: 3, a: tanh, s: adam, lr: constant, m: 200):
+
+	+ Tempo caricamento dataset: 0.361 sec
+	+ Tempo addestramento modello: 4 min
+	+ TRAIN		ACCURANCY: 88.26%	LOG LOSS: 0.37959
+	+ TEST		ACCURANCY: 85.21%	LOG LOSS: 0.55682
+	+ TRAIN		MSE: 1.548
+	+ TEST		MSE: 1.88
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.83      0.77      0.80      1000
+           1       0.97      0.96      0.97      1000
+           2       0.67      0.81      0.74      1000
+           3       0.85      0.88      0.86      1000
+           4       0.75      0.75      0.75      1000
+           5       0.95      0.94      0.94      1000
+           6       0.68      0.60      0.64      1000
+           7       0.91      0.94      0.93      1000
+           8       0.96      0.94      0.95      1000
+           9       0.95      0.92      0.94      1000
+
+    accuracy                           0.85     10000
+   macro avg       0.85      0.85      0.85     10000
+weighted avg       0.85      0.85      0.85     10000
+
+
+- Test del 2022-11-13 14:54:39 F_MNIST con MLP(hidden layer: 1, a: relu, s: adam, lr: adaptive, m: 200):
+
+	+ Tempo caricamento dataset: 0.32 sec
+	+ Tempo addestramento modello: 5 min
+	+ TRAIN		ACCURANCY: 99.02%	LOG LOSS: 0.02563
+	+ TEST		ACCURANCY: 89.25%	LOG LOSS: 0.73341
+	+ TRAIN		MSE: 0.099
+	+ TEST		MSE: 1.548
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.83      0.81      0.82      1000
+           1       0.99      0.97      0.98      1000
+           2       0.79      0.85      0.82      1000
+           3       0.88      0.90      0.89      1000
+           4       0.87      0.77      0.82      1000
+           5       0.97      0.97      0.97      1000
+           6       0.71      0.76      0.73      1000
+           7       0.96      0.96      0.96      1000
+           8       0.98      0.96      0.97      1000
+           9       0.96      0.97      0.96      1000
+
+    accuracy                           0.89     10000
+   macro avg       0.89      0.89      0.89     10000
+weighted avg       0.89      0.89      0.89     10000
+
+
+- Test del 2022-11-13 15:29:28 F_MNIST con MLP(hidden layer: 2, a: relu, s: adam, lr: adaptive, m: 200):
+
+	+ Tempo caricamento dataset: 0.307 sec
+	+ Tempo addestramento modello: 7 min
+	+ TRAIN		ACCURANCY: 99.24%	LOG LOSS: 0.0229
+	+ TEST		ACCURANCY: 89.68%	LOG LOSS: 0.93783
+	+ TRAIN		MSE: 0.083
+	+ TEST		MSE: 1.445
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.86      0.82      0.84      1000
+           1       0.99      0.97      0.98      1000
+           2       0.84      0.81      0.83      1000
+           3       0.88      0.92      0.90      1000
+           4       0.81      0.86      0.84      1000
+           5       0.98      0.97      0.97      1000
+           6       0.72      0.72      0.72      1000
+           7       0.94      0.98      0.96      1000
+           8       0.99      0.97      0.98      1000
+           9       0.97      0.95      0.96      1000
+
+    accuracy                           0.90     10000
+   macro avg       0.90      0.90      0.90     10000
+weighted avg       0.90      0.90      0.90     10000
+
+
+- Test del 2022-11-13 15:41:14 F_MNIST con MLP(hidden layer: 3, a: relu, s: adam, lr: adaptive, m: 200):
+
+	+ Tempo caricamento dataset: 0.316 sec
+	+ Tempo addestramento modello: 5 min
+	+ TRAIN		ACCURANCY: 99.32%	LOG LOSS: 0.01916
+	+ TEST		ACCURANCY: 89.52%	LOG LOSS: 0.81974
+	+ TRAIN		MSE: 0.099
+	+ TEST		MSE: 1.514
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.81      0.86      0.83      1000
+           1       0.99      0.98      0.99      1000
+           2       0.81      0.84      0.82      1000
+           3       0.90      0.91      0.90      1000
+           4       0.83      0.83      0.83      1000
+           5       0.98      0.96      0.97      1000
+           6       0.75      0.67      0.70      1000
+           7       0.95      0.96      0.96      1000
+           8       0.97      0.97      0.97      1000
+           9       0.96      0.97      0.96      1000
+
+    accuracy                           0.90     10000
+   macro avg       0.89      0.90      0.89     10000
+weighted avg       0.89      0.90      0.89     10000
+
+
+- Test del 2022-11-13 16:03:19 F_MNIST con MLP(hidden layer: 4, a: relu, s: adam, lr: adaptive, m: 200):
+
+	+ Tempo caricamento dataset: 0.349 sec
+	+ Tempo addestramento modello: 8 min
+	+ TRAIN		ACCURANCY: 99.3%	LOG LOSS: 0.02086
+	+ TEST		ACCURANCY: 89.3%	LOG LOSS: 0.84427
+	+ TRAIN		MSE: 0.052
+	+ TEST		MSE: 1.424
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.86      0.84      0.85      1000
+           1       0.99      0.98      0.98      1000
+           2       0.81      0.83      0.82      1000
+           3       0.91      0.88      0.90      1000
+           4       0.80      0.82      0.81      1000
+           5       0.94      0.97      0.96      1000
+           6       0.75      0.74      0.74      1000
+           7       0.96      0.92      0.94      1000
+           8       0.96      0.98      0.97      1000
+           9       0.95      0.96      0.96      1000
+
+    accuracy                           0.89     10000
+   macro avg       0.89      0.89      0.89     10000
+weighted avg       0.89      0.89      0.89     10000
+
+
+- Test del 2022-11-13 16:24:52 F_MNIST con MLP(hidden layer: 1, a: relu, s: adam, lr: constant, m: 200):
+
+	+ Tempo caricamento dataset: 0.368 sec
+	+ Tempo addestramento modello: 6 min
+	+ TRAIN		ACCURANCY: 99.02%	LOG LOSS: 0.02563
+	+ TEST		ACCURANCY: 89.25%	LOG LOSS: 0.73341
+	+ TRAIN		MSE: 0.099
+	+ TEST		MSE: 1.548
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.83      0.81      0.82      1000
+           1       0.99      0.97      0.98      1000
+           2       0.79      0.85      0.82      1000
+           3       0.88      0.90      0.89      1000
+           4       0.87      0.77      0.82      1000
+           5       0.97      0.97      0.97      1000
+           6       0.71      0.76      0.73      1000
+           7       0.96      0.96      0.96      1000
+           8       0.98      0.96      0.97      1000
+           9       0.96      0.97      0.96      1000
+
+    accuracy                           0.89     10000
+   macro avg       0.89      0.89      0.89     10000
+weighted avg       0.89      0.89      0.89     10000
+
+
+- Test del 2022-11-13 16:40:20 F_MNIST con MLP(hidden layer: 2, a: relu, s: adam, lr: constant, m: 200):
+
+	+ Tempo caricamento dataset: 0.321 sec
+	+ Tempo addestramento modello: 7 min
+	+ TRAIN		ACCURANCY: 99.24%	LOG LOSS: 0.0229
+	+ TEST		ACCURANCY: 89.68%	LOG LOSS: 0.93783
+	+ TRAIN		MSE: 0.083
+	+ TEST		MSE: 1.445
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.86      0.82      0.84      1000
+           1       0.99      0.97      0.98      1000
+           2       0.84      0.81      0.83      1000
+           3       0.88      0.92      0.90      1000
+           4       0.81      0.86      0.84      1000
+           5       0.98      0.97      0.97      1000
+           6       0.72      0.72      0.72      1000
+           7       0.94      0.98      0.96      1000
+           8       0.99      0.97      0.98      1000
+           9       0.97      0.95      0.96      1000
+
+    accuracy                           0.90     10000
+   macro avg       0.90      0.90      0.90     10000
+weighted avg       0.90      0.90      0.90     10000
+
+
+- Test del 2022-11-13 16:51:36 F_MNIST con MLP(hidden layer: 3, a: relu, s: adam, lr: constant, m: 200):
+
+	+ Tempo caricamento dataset: 0.333 sec
+	+ Tempo addestramento modello: 5 min
+	+ TRAIN		ACCURANCY: 99.32%	LOG LOSS: 0.01916
+	+ TEST		ACCURANCY: 89.52%	LOG LOSS: 0.81974
+	+ TRAIN		MSE: 0.099
+	+ TEST		MSE: 1.514
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.81      0.86      0.83      1000
+           1       0.99      0.98      0.99      1000
+           2       0.81      0.84      0.82      1000
+           3       0.90      0.91      0.90      1000
+           4       0.83      0.83      0.83      1000
+           5       0.98      0.96      0.97      1000
+           6       0.75      0.67      0.70      1000
+           7       0.95      0.96      0.96      1000
+           8       0.97      0.97      0.97      1000
+           9       0.96      0.97      0.96      1000
+
+    accuracy                           0.90     10000
+   macro avg       0.89      0.90      0.89     10000
+weighted avg       0.89      0.90      0.89     10000
+
+
+- Test del 2022-11-13 17:01:43 F_MNIST con MLP(hidden layer: 4, a: relu, s: adam, lr: constant, m: 200):
+
+	+ Tempo caricamento dataset: 0.304 sec
+	+ Tempo addestramento modello: 8 min
+	+ TRAIN		ACCURANCY: 99.3%	LOG LOSS: 0.02086
+	+ TEST		ACCURANCY: 89.3%	LOG LOSS: 0.84427
+	+ TRAIN		MSE: 0.052
+	+ TEST		MSE: 1.424
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.86      0.84      0.85      1000
+           1       0.99      0.98      0.98      1000
+           2       0.81      0.83      0.82      1000
+           3       0.91      0.88      0.90      1000
+           4       0.80      0.82      0.81      1000
+           5       0.94      0.97      0.96      1000
+           6       0.75      0.74      0.74      1000
+           7       0.96      0.92      0.94      1000
+           8       0.96      0.98      0.97      1000
+           9       0.95      0.96      0.96      1000
+
+    accuracy                           0.89     10000
+   macro avg       0.89      0.89      0.89     10000
+weighted avg       0.89      0.89      0.89     10000
+
+
+- Test del 2022-11-13 17:23:35 F_MNIST con MLP(hidden layer: 1, a: tanh, s: adam, lr: adaptive, m: 200):
+
+	+ Tempo caricamento dataset: 0.294 sec
+	+ Tempo addestramento modello: 6 min
+	+ TRAIN		ACCURANCY: 99.72%	LOG LOSS: 0.01152
+	+ TEST		ACCURANCY: 89.72%	LOG LOSS: 0.55672
+	+ TRAIN		MSE: 0.035
+	+ TEST		MSE: 1.437
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.82      0.88      0.85      1000
+           1       0.98      0.98      0.98      1000
+           2       0.79      0.87      0.83      1000
+           3       0.93      0.86      0.90      1000
+           4       0.85      0.82      0.84      1000
+           5       0.98      0.95      0.96      1000
+           6       0.76      0.70      0.73      1000
+           7       0.94      0.97      0.95      1000
+           8       0.98      0.97      0.98      1000
+           9       0.96      0.96      0.96      1000
+
+    accuracy                           0.90     10000
+   macro avg       0.90      0.90      0.90     10000
+weighted avg       0.90      0.90      0.90     10000
+
+
+- Test del 2022-11-13 17:42:25 F_MNIST con MLP(hidden layer: 2, a: tanh, s: adam, lr: adaptive, m: 200):
+
+	+ Tempo caricamento dataset: 0.345 sec
+	+ Tempo addestramento modello: 7 min
+	+ TRAIN		ACCURANCY: 98.91%	LOG LOSS: 0.02997
+	+ TEST		ACCURANCY: 89.07%	LOG LOSS: 0.56213
+	+ TRAIN		MSE: 0.159
+	+ TEST		MSE: 1.495
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.83      0.85      0.84      1000
+           1       0.99      0.98      0.98      1000
+           2       0.79      0.85      0.82      1000
+           3       0.90      0.87      0.89      1000
+           4       0.79      0.85      0.82      1000
+           5       0.97      0.95      0.96      1000
+           6       0.78      0.65      0.71      1000
+           7       0.95      0.96      0.95      1000
+           8       0.96      0.98      0.97      1000
+           9       0.95      0.97      0.96      1000
+
+    accuracy                           0.89     10000
+   macro avg       0.89      0.89      0.89     10000
+weighted avg       0.89      0.89      0.89     10000
+
+
+- Test del 2022-11-13 17:52:38 F_MNIST con MLP(hidden layer: 3, a: tanh, s: adam, lr: adaptive, m: 200):
+
+	+ Tempo caricamento dataset: 0.347 sec
+	+ Tempo addestramento modello: 9 min
+	+ TRAIN		ACCURANCY: 98.95%	LOG LOSS: 0.02808
+	+ TEST		ACCURANCY: 89.22%	LOG LOSS: 0.54261
+	+ TRAIN		MSE: 0.112
+	+ TEST		MSE: 1.488
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.87      0.81      0.84      1000
+           1       0.98      0.97      0.98      1000
+           2       0.84      0.75      0.79      1000
+           3       0.90      0.91      0.90      1000
+           4       0.78      0.87      0.82      1000
+           5       0.97      0.97      0.97      1000
+           6       0.71      0.74      0.73      1000
+           7       0.96      0.95      0.95      1000
+           8       0.97      0.98      0.98      1000
+           9       0.95      0.97      0.96      1000
+
+    accuracy                           0.89     10000
+   macro avg       0.89      0.89      0.89     10000
+weighted avg       0.89      0.89      0.89     10000
+
+
+- Test del 2022-11-13 18:06:54 F_MNIST con MLP(hidden layer: 4, a: tanh, s: adam, lr: adaptive, m: 200):
+
+	+ Tempo caricamento dataset: 0.318 sec
+	+ Tempo addestramento modello: 10 min
+	+ TRAIN		ACCURANCY: 98.63%	LOG LOSS: 0.0382
+	+ TEST		ACCURANCY: 89.1%	LOG LOSS: 0.50267
+	+ TRAIN		MSE: 0.183
+	+ TEST		MSE: 1.493
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.85      0.81      0.83      1000
+           1       0.99      0.98      0.98      1000
+           2       0.80      0.84      0.82      1000
+           3       0.90      0.88      0.89      1000
+           4       0.81      0.83      0.82      1000
+           5       0.98      0.95      0.96      1000
+           6       0.72      0.71      0.71      1000
+           7       0.94      0.96      0.95      1000
+           8       0.97      0.98      0.97      1000
+           9       0.96      0.96      0.96      1000
+
+    accuracy                           0.89     10000
+   macro avg       0.89      0.89      0.89     10000
+weighted avg       0.89      0.89      0.89     10000
+
+
+- Test del 2022-11-13 18:24:41 F_MNIST con MLP(hidden layer: 1, a: tanh, s: adam, lr: constant, m: 200):
+
+	+ Tempo caricamento dataset: 0.344 sec
+	+ Tempo addestramento modello: 6 min
+	+ TRAIN		ACCURANCY: 99.72%	LOG LOSS: 0.01152
+	+ TEST		ACCURANCY: 89.72%	LOG LOSS: 0.55672
+	+ TRAIN		MSE: 0.035
+	+ TEST		MSE: 1.437
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.82      0.88      0.85      1000
+           1       0.98      0.98      0.98      1000
+           2       0.79      0.87      0.83      1000
+           3       0.93      0.86      0.90      1000
+           4       0.85      0.82      0.84      1000
+           5       0.98      0.95      0.96      1000
+           6       0.76      0.70      0.73      1000
+           7       0.94      0.97      0.95      1000
+           8       0.98      0.97      0.98      1000
+           9       0.96      0.96      0.96      1000
+
+    accuracy                           0.90     10000
+   macro avg       0.90      0.90      0.90     10000
+weighted avg       0.90      0.90      0.90     10000
+
+
+- Test del 2022-11-13 18:36:05 F_MNIST con MLP(hidden layer: 2, a: tanh, s: adam, lr: constant, m: 200):
+
+	+ Tempo caricamento dataset: 0.31 sec
+	+ Tempo addestramento modello: 8 min
+	+ TRAIN		ACCURANCY: 98.91%	LOG LOSS: 0.02997
+	+ TEST		ACCURANCY: 89.07%	LOG LOSS: 0.56213
+	+ TRAIN		MSE: 0.159
+	+ TEST		MSE: 1.495
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.83      0.85      0.84      1000
+           1       0.99      0.98      0.98      1000
+           2       0.79      0.85      0.82      1000
+           3       0.90      0.87      0.89      1000
+           4       0.79      0.85      0.82      1000
+           5       0.97      0.95      0.96      1000
+           6       0.78      0.65      0.71      1000
+           7       0.95      0.96      0.95      1000
+           8       0.96      0.98      0.97      1000
+           9       0.95      0.97      0.96      1000
+
+    accuracy                           0.89     10000
+   macro avg       0.89      0.89      0.89     10000
+weighted avg       0.89      0.89      0.89     10000
+
+
+- Test del 2022-11-13 18:48:36 F_MNIST con MLP(hidden layer: 3, a: tanh, s: adam, lr: constant, m: 200):
+
+	+ Tempo caricamento dataset: 0.318 sec
+	+ Tempo addestramento modello: 9 min
+	+ TRAIN		ACCURANCY: 98.95%	LOG LOSS: 0.02808
+	+ TEST		ACCURANCY: 89.22%	LOG LOSS: 0.54261
+	+ TRAIN		MSE: 0.112
+	+ TEST		MSE: 1.488
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.87      0.81      0.84      1000
+           1       0.98      0.97      0.98      1000
+           2       0.84      0.75      0.79      1000
+           3       0.90      0.91      0.90      1000
+           4       0.78      0.87      0.82      1000
+           5       0.97      0.97      0.97      1000
+           6       0.71      0.74      0.73      1000
+           7       0.96      0.95      0.95      1000
+           8       0.97      0.98      0.98      1000
+           9       0.95      0.97      0.96      1000
+
+    accuracy                           0.89     10000
+   macro avg       0.89      0.89      0.89     10000
+weighted avg       0.89      0.89      0.89     10000
+
+
+- Test del 2022-11-13 19:03:48 F_MNIST con MLP(hidden layer: 4, a: tanh, s: adam, lr: constant, m: 200):
+
+	+ Tempo caricamento dataset: 0.316 sec
+	+ Tempo addestramento modello: 12 min
+	+ TRAIN		ACCURANCY: 98.63%	LOG LOSS: 0.0382
+	+ TEST		ACCURANCY: 89.1%	LOG LOSS: 0.50267
+	+ TRAIN		MSE: 0.183
+	+ TEST		MSE: 1.493
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.85      0.81      0.83      1000
+           1       0.99      0.98      0.98      1000
+           2       0.80      0.84      0.82      1000
+           3       0.90      0.88      0.89      1000
+           4       0.81      0.83      0.82      1000
+           5       0.98      0.95      0.96      1000
+           6       0.72      0.71      0.71      1000
+           7       0.94      0.96      0.95      1000
+           8       0.97      0.98      0.97      1000
+           9       0.96      0.96      0.96      1000
+
+    accuracy                           0.89     10000
+   macro avg       0.89      0.89      0.89     10000
+weighted avg       0.89      0.89      0.89     10000
+
+
+- Test del 2022-11-13 19:26:16 F_MNIST con MLP(hidden layer: 1, a: relu, s: adam, lr: adaptive, m: 200):
+
+	+ Tempo caricamento dataset: 0.342 sec
+	+ Tempo addestramento modello: 11 min
+	+ TRAIN		ACCURANCY: 99.54%	LOG LOSS: 0.01379
+	+ TEST		ACCURANCY: 89.35%	LOG LOSS: 0.74398
+	+ TRAIN		MSE: 0.047
+	+ TEST		MSE: 1.451
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.84      0.85      0.84      1000
+           1       0.99      0.97      0.98      1000
+           2       0.77      0.84      0.80      1000
+           3       0.90      0.90      0.90      1000
+           4       0.83      0.79      0.81      1000
+           5       0.98      0.96      0.97      1000
+           6       0.74      0.71      0.73      1000
+           7       0.95      0.97      0.96      1000
+           8       0.98      0.97      0.98      1000
+           9       0.96      0.97      0.96      1000
+
+    accuracy                           0.89     10000
+   macro avg       0.89      0.89      0.89     10000
+weighted avg       0.89      0.89      0.89     10000
+
+
+- Test del 2022-11-13 20:04:55 F_MNIST con MLP(hidden layer: 2, a: relu, s: adam, lr: adaptive, m: 200):
+
+	+ Tempo caricamento dataset: 0.333 sec
+	+ Tempo addestramento modello: 8 min
+	+ TRAIN		ACCURANCY: 99.19%	LOG LOSS: 0.02236
+	+ TEST		ACCURANCY: 89.57%	LOG LOSS: 0.78764
+	+ TRAIN		MSE: 0.102
+	+ TEST		MSE: 1.503
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.86      0.81      0.83      1000
+           1       1.00      0.97      0.99      1000
+           2       0.79      0.84      0.82      1000
+           3       0.90      0.91      0.91      1000
+           4       0.82      0.82      0.82      1000
+           5       0.98      0.96      0.97      1000
+           6       0.73      0.73      0.73      1000
+           7       0.95      0.97      0.96      1000
+           8       0.98      0.97      0.97      1000
+           9       0.96      0.97      0.97      1000
+
+    accuracy                           0.90     10000
+   macro avg       0.90      0.90      0.90     10000
+weighted avg       0.90      0.90      0.90     10000
+
+
+- Test del 2022-11-13 20:23:22 F_MNIST con MLP(hidden layer: 3, a: relu, s: adam, lr: adaptive, m: 200):
+
+	+ Tempo caricamento dataset: 0.319 sec
+	+ Tempo addestramento modello: 13 min
+	+ TRAIN		ACCURANCY: 99.53%	LOG LOSS: 0.01432
+	+ TEST		ACCURANCY: 89.69%	LOG LOSS: 0.88434
+	+ TRAIN		MSE: 0.06
+	+ TEST		MSE: 1.506
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.84      0.82      0.83      1000
+           1       0.99      0.98      0.99      1000
+           2       0.84      0.81      0.82      1000
+           3       0.88      0.93      0.91      1000
+           4       0.83      0.81      0.82      1000
+           5       0.99      0.97      0.98      1000
+           6       0.72      0.73      0.73      1000
+           7       0.94      0.97      0.96      1000
+           8       0.96      0.98      0.97      1000
+           9       0.96      0.95      0.96      1000
+
+    accuracy                           0.90     10000
+   macro avg       0.90      0.90      0.90     10000
+weighted avg       0.90      0.90      0.90     10000
+
+
+- Test del 2022-11-14 15:46:44 F_MNIST con MLP(hidden layer: 4, a: relu, s: adam, lr: adaptive, m: 200):
+
+	+ Tempo caricamento dataset: 0.357 sec
+	+ Tempo addestramento modello: 18 min
+	+ TRAIN		ACCURANCY: 98.82%	LOG LOSS: 0.03177
+	+ TEST		ACCURANCY: 89.35%	LOG LOSS: 0.72107
+	+ TRAIN		MSE: 0.12
+	+ TEST		MSE: 1.499
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.83      0.83      0.83      1000
+           1       0.99      0.98      0.98      1000
+           2       0.81      0.82      0.81      1000
+           3       0.89      0.91      0.90      1000
+           4       0.83      0.80      0.82      1000
+           5       0.98      0.97      0.98      1000
+           6       0.72      0.73      0.72      1000
+           7       0.96      0.93      0.95      1000
+           8       0.98      0.97      0.98      1000
+           9       0.93      0.98      0.96      1000
+
+    accuracy                           0.89     10000
+   macro avg       0.89      0.89      0.89     10000
+weighted avg       0.89      0.89      0.89     10000
+
+
+- Test del 2022-11-14 16:56:57 F_MNIST con MLP(hidden layer: 1, a: relu, s: adam, lr: constant, m: 200):
+
+	+ Tempo caricamento dataset: 0.333 sec
+	+ Tempo addestramento modello: 11 min
+	+ TRAIN		ACCURANCY: 99.54%	LOG LOSS: 0.01379
+	+ TEST		ACCURANCY: 89.35%	LOG LOSS: 0.74398
+	+ TRAIN		MSE: 0.047
+	+ TEST		MSE: 1.451
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.84      0.85      0.84      1000
+           1       0.99      0.97      0.98      1000
+           2       0.77      0.84      0.80      1000
+           3       0.90      0.90      0.90      1000
+           4       0.83      0.79      0.81      1000
+           5       0.98      0.96      0.97      1000
+           6       0.74      0.71      0.73      1000
+           7       0.95      0.97      0.96      1000
+           8       0.98      0.97      0.98      1000
+           9       0.96      0.97      0.96      1000
+
+    accuracy                           0.89     10000
+   macro avg       0.89      0.89      0.89     10000
+weighted avg       0.89      0.89      0.89     10000
+
+
+
+
+- Test del 2022-11-15 14:51:20 F_MNIST con MLP(hidden layer: 2, a: relu, s: adam, lr: constant, m: 200):
+
+	+ Tempo caricamento dataset: 0.338 sec
+	+ Tempo addestramento modello: 8 min
+	+ TRAIN		ACCURANCY: 99.19%	LOG LOSS: 0.02236
+	+ TEST		ACCURANCY: 89.57%	LOG LOSS: 0.78764
+	+ TRAIN		MSE: 0.102
+	+ TEST		MSE: 1.503
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.86      0.81      0.83      1000
+           1       1.00      0.97      0.99      1000
+           2       0.79      0.84      0.82      1000
+           3       0.90      0.91      0.91      1000
+           4       0.82      0.82      0.82      1000
+           5       0.98      0.96      0.97      1000
+           6       0.73      0.73      0.73      1000
+           7       0.95      0.97      0.96      1000
+           8       0.98      0.97      0.97      1000
+           9       0.96      0.97      0.97      1000
+
+    accuracy                           0.90     10000
+   macro avg       0.90      0.90      0.90     10000
+weighted avg       0.90      0.90      0.90     10000
+
+
+- Test del 2022-11-15 15:05:11 F_MNIST con MLP(hidden layer: 3, a: relu, s: adam, lr: constant, m: 200):
+
+	+ Tempo caricamento dataset: 0.303 sec
+	+ Tempo addestramento modello: 13 min
+	+ TRAIN		ACCURANCY: 99.53%	LOG LOSS: 0.01432
+	+ TEST		ACCURANCY: 89.69%	LOG LOSS: 0.88434
+	+ TRAIN		MSE: 0.06
+	+ TEST		MSE: 1.506
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.84      0.82      0.83      1000
+           1       0.99      0.98      0.99      1000
+           2       0.84      0.81      0.82      1000
+           3       0.88      0.93      0.91      1000
+           4       0.83      0.81      0.82      1000
+           5       0.99      0.97      0.98      1000
+           6       0.72      0.73      0.73      1000
+           7       0.94      0.97      0.96      1000
+           8       0.96      0.98      0.97      1000
+           9       0.96      0.95      0.96      1000
+
+    accuracy                           0.90     10000
+   macro avg       0.90      0.90      0.90     10000
+weighted avg       0.90      0.90      0.90     10000
+
+
+- Test del 2022-11-15 15:31:23 F_MNIST con MLP(hidden layer: 4, a: relu, s: adam, lr: constant, m: 200):
+
+	+ Tempo caricamento dataset: 0.298 sec
+	+ Tempo addestramento modello: 18 min
+	+ TRAIN		ACCURANCY: 98.82%	LOG LOSS: 0.03177
+	+ TEST		ACCURANCY: 89.35%	LOG LOSS: 0.72107
+	+ TRAIN		MSE: 0.12
+	+ TEST		MSE: 1.499
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.83      0.83      0.83      1000
+           1       0.99      0.98      0.98      1000
+           2       0.81      0.82      0.81      1000
+           3       0.89      0.91      0.90      1000
+           4       0.83      0.80      0.82      1000
+           5       0.98      0.97      0.98      1000
+           6       0.72      0.73      0.72      1000
+           7       0.96      0.93      0.95      1000
+           8       0.98      0.97      0.98      1000
+           9       0.93      0.98      0.96      1000
+
+    accuracy                           0.89     10000
+   macro avg       0.89      0.89      0.89     10000
+weighted avg       0.89      0.89      0.89     10000
+
+
+- Test del 2022-11-15 16:02:06 MNIST con MLP(hidden layer: 1, a: tanh, s: adam, lr: adaptive, m: 200):
+
+	+ Tempo caricamento dataset: 0.042 sec
+	+ Tempo addestramento modello: 0 min
+	+ TRAIN		ACCURANCY: 100.0%	LOG LOSS: 0.00045
+	+ TEST		ACCURANCY: 97.8%	LOG LOSS: 0.10019
+	+ TRAIN		MSE: 0.0
+	+ TEST		MSE: 0.39
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99       980
+           1       0.99      0.99      0.99      1135
+           2       0.97      0.97      0.97      1032
+           3       0.97      0.98      0.98      1010
+           4       0.97      0.98      0.98       982
+           5       0.98      0.96      0.97       892
+           6       0.98      0.98      0.98       958
+           7       0.98      0.97      0.98      1028
+           8       0.97      0.97      0.97       974
+           9       0.98      0.97      0.97      1009
+
+    accuracy                           0.98     10000
+   macro avg       0.98      0.98      0.98     10000
+weighted avg       0.98      0.98      0.98     10000
+
+
+- Test del 2022-11-15 16:40:21 MNIST con MLP(hidden layer: 2, a: tanh, s: adam, lr: adaptive, m: 200):
+
+	+ Tempo caricamento dataset: 0.112 sec
+	+ Tempo addestramento modello: 0 min
+	+ TRAIN		ACCURANCY: 100.0%	LOG LOSS: 0.00029
+	+ TEST		ACCURANCY: 98.04%	LOG LOSS: 0.10009
+	+ TRAIN		MSE: 0.0
+	+ TEST		MSE: 0.371
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99       980
+           1       0.99      0.99      0.99      1135
+           2       0.98      0.98      0.98      1032
+           3       0.97      0.98      0.98      1010
+           4       0.98      0.98      0.98       982
+           5       0.99      0.97      0.98       892
+           6       0.98      0.98      0.98       958
+           7       0.99      0.98      0.98      1028
+           8       0.97      0.97      0.97       974
+           9       0.98      0.98      0.98      1009
+
+    accuracy                           0.98     10000
+   macro avg       0.98      0.98      0.98     10000
+weighted avg       0.98      0.98      0.98     10000
+
+
+- Test del 2022-11-15 17:20:27 MNIST con MLP(hidden layer: 3, a: tanh, s: adam, lr: adaptive, m: 200):
+
+	+ Tempo caricamento dataset: 0.047 sec
+	+ Tempo addestramento modello: 0 min
+	+ TRAIN		ACCURANCY: 100.0%	LOG LOSS: 5e-05
+	+ TEST		ACCURANCY: 97.85%	LOG LOSS: 0.10832
+	+ TRAIN		MSE: 0.0
+	+ TEST		MSE: 0.401
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99       980
+           1       0.99      0.99      0.99      1135
+           2       0.98      0.98      0.98      1032
+           3       0.96      0.98      0.97      1010
+           4       0.98      0.97      0.98       982
+           5       0.98      0.98      0.98       892
+           6       0.98      0.98      0.98       958
+           7       0.98      0.98      0.98      1028
+           8       0.98      0.96      0.97       974
+           9       0.97      0.97      0.97      1009
+
+    accuracy                           0.98     10000
+   macro avg       0.98      0.98      0.98     10000
+weighted avg       0.98      0.98      0.98     10000
+
+
+- Test del 2022-11-16 13:39:30 MNIST con MLP(hidden layer: 4, a: tanh, s: adam, lr: adaptive, m: 200):
+
+	+ Tempo caricamento dataset: 0.046 sec
+	+ Tempo addestramento modello: 2 min
+	+ TRAIN		ACCURANCY: 100.0%	LOG LOSS: 2e-05
+	+ TEST		ACCURANCY: 98.13%	LOG LOSS: 0.11173
+	+ TRAIN		MSE: 0.0
+	+ TEST		MSE: 0.344
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99       980
+           1       0.99      0.99      0.99      1135
+           2       0.98      0.98      0.98      1032
+           3       0.97      0.99      0.98      1010
+           4       0.98      0.98      0.98       982
+           5       0.98      0.97      0.98       892
+           6       0.98      0.99      0.99       958
+           7       0.98      0.98      0.98      1028
+           8       0.98      0.97      0.98       974
+           9       0.98      0.97      0.97      1009
+
+    accuracy                           0.98     10000
+   macro avg       0.98      0.98      0.98     10000
+weighted avg       0.98      0.98      0.98     10000
+
+
+- Test del 2022-11-16 13:47:20 MNIST con MLP(hidden layer: 1, a: tanh, s: adam, lr: constant, m: 200):
+
+	+ Tempo caricamento dataset: 0.042 sec
+	+ Tempo addestramento modello: 1 min
+	+ TRAIN		ACCURANCY: 100.0%	LOG LOSS: 0.00045
+	+ TEST		ACCURANCY: 97.8%	LOG LOSS: 0.10019
+	+ TRAIN		MSE: 0.0
+	+ TEST		MSE: 0.39
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99       980
+           1       0.99      0.99      0.99      1135
+           2       0.97      0.97      0.97      1032
+           3       0.97      0.98      0.98      1010
+           4       0.97      0.98      0.98       982
+           5       0.98      0.96      0.97       892
+           6       0.98      0.98      0.98       958
+           7       0.98      0.97      0.98      1028
+           8       0.97      0.97      0.97       974
+           9       0.98      0.97      0.97      1009
+
+    accuracy                           0.98     10000
+   macro avg       0.98      0.98      0.98     10000
+weighted avg       0.98      0.98      0.98     10000
+
+
+- Test del 2022-11-16 13:52:54 MNIST con MLP(hidden layer: 2, a: tanh, s: adam, lr: constant, m: 200):
+
+	+ Tempo caricamento dataset: 0.043 sec
+	+ Tempo addestramento modello: 0 min
+	+ TRAIN		ACCURANCY: 100.0%	LOG LOSS: 0.00029
+	+ TEST		ACCURANCY: 98.04%	LOG LOSS: 0.10009
+	+ TRAIN		MSE: 0.0
+	+ TEST		MSE: 0.371
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99       980
+           1       0.99      0.99      0.99      1135
+           2       0.98      0.98      0.98      1032
+           3       0.97      0.98      0.98      1010
+           4       0.98      0.98      0.98       982
+           5       0.99      0.97      0.98       892
+           6       0.98      0.98      0.98       958
+           7       0.99      0.98      0.98      1028
+           8       0.97      0.97      0.97       974
+           9       0.98      0.98      0.98      1009
+
+    accuracy                           0.98     10000
+   macro avg       0.98      0.98      0.98     10000
+weighted avg       0.98      0.98      0.98     10000
+
+
+- Test del 2022-11-16 13:58:57 MNIST con MLP(hidden layer: 3, a: tanh, s: adam, lr: constant, m: 200):
+
+	+ Tempo caricamento dataset: 0.043 sec
+	+ Tempo addestramento modello: 0 min
+	+ TRAIN		ACCURANCY: 100.0%	LOG LOSS: 5e-05
+	+ TEST		ACCURANCY: 97.85%	LOG LOSS: 0.10832
+	+ TRAIN		MSE: 0.0
+	+ TEST		MSE: 0.401
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99       980
+           1       0.99      0.99      0.99      1135
+           2       0.98      0.98      0.98      1032
+           3       0.96      0.98      0.97      1010
+           4       0.98      0.97      0.98       982
+           5       0.98      0.98      0.98       892
+           6       0.98      0.98      0.98       958
+           7       0.98      0.98      0.98      1028
+           8       0.98      0.96      0.97       974
+           9       0.97      0.97      0.97      1009
+
+    accuracy                           0.98     10000
+   macro avg       0.98      0.98      0.98     10000
+weighted avg       0.98      0.98      0.98     10000
+
+
+- Test del 2022-11-29 20:02:15 MNIST con MLP(hidden layer: 3, a: relu, s: adam, lr: constant, m: 200):
+
+	+ Tempo caricamento dataset: 0.055 sec
+	+ Tempo addestramento modello: 0 min
+	+ TRAIN		ACCURANCY: 99.77%	LOG LOSS: 0.00723
+	+ TEST		ACCURANCY: 97.7%	LOG LOSS: 0.13134
+	+ TRAIN		MSE: 0.061
+	+ TEST		MSE: 0.46
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99       980
+           1       0.99      0.99      0.99      1135
+           2       0.96      0.99      0.97      1032
+           3       0.97      0.98      0.97      1010
+           4       0.98      0.98      0.98       982
+           5       0.98      0.97      0.97       892
+           6       0.99      0.97      0.98       958
+           7       0.98      0.97      0.98      1028
+           8       0.97      0.97      0.97       974
+           9       0.98      0.96      0.97      1009
+
+    accuracy                           0.98     10000
+   macro avg       0.98      0.98      0.98     10000
+weighted avg       0.98      0.98      0.98     10000
+
+
+- Test del 2022-11-29 20:04:35 MNIST con MLP(hidden layer: 3, a: relu, s: adam, lr: adaptive, m: 200):
+
+	+ Tempo caricamento dataset: 0.038 sec
+	+ Tempo addestramento modello: 0 min
+	+ TRAIN		ACCURANCY: 99.77%	LOG LOSS: 0.00723
+	+ TEST		ACCURANCY: 97.7%	LOG LOSS: 0.13134
+	+ TRAIN		MSE: 0.061
+	+ TEST		MSE: 0.46
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99       980
+           1       0.99      0.99      0.99      1135
+           2       0.96      0.99      0.97      1032
+           3       0.97      0.98      0.97      1010
+           4       0.98      0.98      0.98       982
+           5       0.98      0.97      0.97       892
+           6       0.99      0.97      0.98       958
+           7       0.98      0.97      0.98      1028
+           8       0.97      0.97      0.97       974
+           9       0.98      0.96      0.97      1009
+
+    accuracy                           0.98     10000
+   macro avg       0.98      0.98      0.98     10000
+weighted avg       0.98      0.98      0.98     10000
+
+
+- Test del 2022-11-29 20:08:21 MNIST con MLP(hidden layer: 4, a: relu, s: adam, lr: constant, m: 200):
+
+	+ Tempo caricamento dataset: 0.036 sec
+	+ Tempo addestramento modello: 0 min
+	+ TRAIN		ACCURANCY: 99.68%	LOG LOSS: 0.00888
+	+ TEST		ACCURANCY: 97.61%	LOG LOSS: 0.15535
+	+ TRAIN		MSE: 0.059
+	+ TEST		MSE: 0.448
+
+	+ Report di classificazione
+
+              precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99       980
+           1       0.99      0.99      0.99      1135
+           2       0.98      0.98      0.98      1032
+           3       0.96      0.98      0.97      1010
+           4       0.97      0.98      0.98       982
+           5       0.99      0.97      0.98       892
+           6       0.97      0.98      0.98       958
+           7       0.96      0.98      0.97      1028
+           8       0.98      0.97      0.98       974
+           9       0.99      0.92      0.95      1009
+
+    accuracy                           0.98     10000
+   macro avg       0.98      0.98      0.98     10000
+weighted avg       0.98      0.98      0.98     10000
+

@@ -139,6 +139,13 @@ RF su F_MNIST
 	Migliori Iper-parametri: {'criterion': 'entropy', 'max_depth': 21, 'min_samples_split': 2, 'n_estimators': 180}
 
 
+
+
+
+
+
+
+
 SVM su F_MNIST
 
 	Con kernel: poly
@@ -155,3 +162,208 @@ SVM su F_MNIST
 
 
 	Migliori Iper-parametri: {'C': 10, 'gamma': 0.01}
+
+
+
+SVM su F_MNIST
+
+	Con kernel: rbf
+	Il tasso di accuratezza si aggirerà intorno al : 90.25%
+
+
+   mean_fit_time  std_fit_time  mean_score_time  std_score_time param_C param_gamma                      params  split0_test_score  split1_test_score  split2_test_score  split3_test_score  mean_test_score  std_test_score  rank_test_score  split0_train_score  split1_train_score  split2_train_score  split3_train_score  mean_train_score  std_train_score
+3     852.251831      1.923060       494.446367        0.222040      10        0.01    {'C': 10, 'gamma': 0.01}           0.901667           0.902533           0.904200           0.901533         0.902483        0.001063                1            0.972222            0.972689            0.972133            0.973200          0.972561         0.000425
+0     856.877695      0.706077       505.325417        1.102201       5        0.01     {'C': 5, 'gamma': 0.01}           0.901267           0.901533           0.902467           0.899800         0.901267        0.000957                2            0.954044            0.954289            0.954067            0.954556          0.954239         0.000206
+4     586.281667      0.468834       531.653782        1.627572      10       0.001   {'C': 10, 'gamma': 0.001}           0.874933           0.873800           0.876133           0.873733         0.874650        0.000980                3            0.890200            0.890156            0.888156            0.889689          0.889550         0.000830
+1     940.193038      0.814365       562.319519        0.292364       5       0.001    {'C': 5, 'gamma': 0.001}           0.868667           0.868533           0.871200           0.869600         0.869500        0.001064                4            0.880444            0.880889            0.879600            0.879578          0.880128         0.000561
+5     895.032048      2.008613       681.292462        0.839984      10      0.0001  {'C': 10, 'gamma': 0.0001}           0.845267           0.844333           0.847933           0.843733         0.845317        0.001606                5            0.849556            0.849022            0.848156            0.848978          0.848928         0.000500
+2    1352.390408      2.452742       746.791963        1.339267       5      0.0001   {'C': 5, 'gamma': 0.0001}           0.830200           0.827133           0.833800           0.829067         0.830050        0.002427                6            0.832800            0.833244            0.831733            0.833244          0.832756         0.000617
+
+
+	Migliori Iper-parametri: {'C': 10, 'gamma': 0.01}
+
+
+
+SVM su F_MNIST
+
+	Con kernel: sigmoid
+	Il tasso di accuratezza si aggirerà intorno al : 82.98%
+
+
+   mean_fit_time  std_fit_time  mean_score_time  std_score_time param_C param_gamma                      params  split0_test_score  split1_test_score  split2_test_score  split3_test_score  mean_test_score  std_test_score  rank_test_score  split0_train_score  split1_train_score  split2_train_score  split3_train_score  mean_train_score  std_train_score
+5    1023.154028     90.185049       447.450825        3.517956      10      0.0001  {'C': 10, 'gamma': 0.0001}           0.829467           0.827067           0.834133           0.828467         0.829783        0.002652                1            0.832733            0.833289            0.831444            0.833044          0.832628         0.000711
+1    1121.970728      4.424852       674.993125        1.452193       5       0.001    {'C': 5, 'gamma': 0.001}           0.831133           0.826800           0.831800           0.828933         0.829667        0.001966                2            0.834911            0.837267            0.837067            0.835000          0.836061         0.001108
+4     941.833103      1.127160       598.063283        2.177828      10       0.001   {'C': 10, 'gamma': 0.001}           0.818200           0.814267           0.819067           0.817667         0.817300        0.001821                3            0.823822            0.824711            0.825222            0.824378          0.824533         0.000509
+2    1866.950372      6.130222       910.599119        1.991778       5      0.0001   {'C': 5, 'gamma': 0.0001}           0.814000           0.810067           0.817533           0.812400         0.813500        0.002716                4            0.814467            0.815911            0.814222            0.815711          0.815078         0.000742
+3    1933.966770    109.668934      1073.198853       31.061518      10        0.01    {'C': 10, 'gamma': 0.01}           0.436067           0.433733           0.449400           0.404533         0.430933        0.016372                5            0.441378            0.442178            0.445533            0.406644          0.433933         0.015832
+0    1995.828636     99.147438      1035.781921       33.453230       5        0.01     {'C': 5, 'gamma': 0.01}           0.436200           0.433867           0.442867           0.404400         0.429333        0.014769                6            0.441867            0.442178            0.437333            0.406956          0.432083         0.014634
+
+
+	Migliori Iper-parametri: {'C': 10, 'gamma': 0.0001}
+
+
+
+SVM su MNIST
+
+	Con kernel: rbf
+	Il tasso di accuratezza si aggirerà intorno al : 98.0%
+
+
+   mean_fit_time  std_fit_time  mean_score_time  std_score_time param_C param_gamma                      params  split0_test_score  split1_test_score  split2_test_score  split3_test_score  mean_test_score  std_test_score  rank_test_score  split0_train_score  split1_train_score  split2_train_score  split3_train_score  mean_train_score  std_train_score
+3     563.273166      3.643947       336.244830        8.529383      10        0.01    {'C': 10, 'gamma': 0.01}           0.982133           0.979467           0.978933           0.979600         0.980033        0.001238                1            0.999600            0.999578            0.999556            0.999556          0.999572         0.000018
+0     591.244541      3.585603       322.794290        2.226735       5        0.01     {'C': 5, 'gamma': 0.01}           0.981400           0.979800           0.978667           0.979800         0.979917        0.000973                2            0.997911            0.997956            0.998133            0.998178          0.998044         0.000113
+4     434.941508      1.335639       336.582701        4.117612      10       0.001   {'C': 10, 'gamma': 0.001}           0.950200           0.953000           0.948867           0.953467         0.951383        0.001916                3            0.963178            0.962978            0.963956            0.962222          0.963083         0.000617
+1     713.870381      3.159084       379.228533        2.358276       5       0.001    {'C': 5, 'gamma': 0.001}           0.945467           0.948200           0.942733           0.947800         0.946050        0.002181                4            0.954422            0.954556            0.955622            0.954111          0.954678         0.000569
+5     696.791078     16.488741       300.889166        1.765605      10      0.0001  {'C': 10, 'gamma': 0.0001}           0.927067           0.930267           0.922467           0.930667         0.927617        0.003284                5            0.931956            0.931622            0.933244            0.931267          0.932022         0.000747
+2    1280.565597      5.804695       656.299472        4.645872       5      0.0001   {'C': 5, 'gamma': 0.0001}           0.921200           0.923533           0.916133           0.925600         0.921617        0.003528                6            0.924400            0.924044            0.925978            0.923867          0.924572         0.000834
+
+
+	Migliori Iper-parametri: {'C': 10, 'gamma': 0.01}
+
+
+
+SVM su MNIST
+
+	Con kernel: sigmoid
+	Il tasso di accuratezza si aggirerà intorno al : 93.65%
+
+
+   mean_fit_time  std_fit_time  mean_score_time  std_score_time param_C param_gamma                      params  split0_test_score  split1_test_score  split2_test_score  split3_test_score  mean_test_score  std_test_score  rank_test_score  split0_train_score  split1_train_score  split2_train_score  split3_train_score  mean_train_score  std_train_score
+4     769.029899      4.998018       434.172368        4.499864      10       0.001   {'C': 10, 'gamma': 0.001}           0.936733           0.938533           0.932333           0.938533         0.936533        0.002534                1            0.943400            0.943533            0.945711            0.943933          0.944144         0.000926
+1     940.594990      5.691526       484.516974        4.272345       5       0.001    {'C': 5, 'gamma': 0.001}           0.932333           0.936067           0.928333           0.935400         0.933033        0.003057                2            0.939244            0.938533            0.940467            0.938489          0.939183         0.000799
+5     973.521446     12.013480       388.904952        2.634069      10      0.0001  {'C': 10, 'gamma': 0.0001}           0.921000           0.923067           0.915733           0.925000         0.921200        0.003459                3            0.923933            0.923533            0.925556            0.923422          0.924111         0.000855
+2    2164.574212     14.423038       869.849824        6.278224       5      0.0001   {'C': 5, 'gamma': 0.0001}           0.912133           0.913600           0.906600           0.917800         0.912533        0.004007                4            0.916067            0.914578            0.917200            0.914844          0.915672         0.001046
+0     730.056091      5.193540       390.626536        6.985284       5        0.01     {'C': 5, 'gamma': 0.01}           0.810133           0.812267           0.806067           0.828200         0.814167        0.008403                5            0.819733            0.819667            0.823067            0.819822          0.820572         0.001441
+3     681.608171     14.849823       406.761962        2.502646      10        0.01    {'C': 10, 'gamma': 0.01}           0.800867           0.810667           0.805267           0.825867         0.810667        0.009437                6            0.815200            0.815067            0.817022            0.817533          0.816206         0.001088
+
+
+	Migliori Iper-parametri: {'C': 10, 'gamma': 0.001}
+
+
+
+SVM su MNIST
+
+	Con kernel: poly
+	Il tasso di accuratezza si aggirerà intorno al : 97.64%
+
+
+   mean_fit_time  std_fit_time  mean_score_time  std_score_time param_C param_gamma                      params  split0_test_score  split1_test_score  split2_test_score  split3_test_score  mean_test_score  std_test_score  rank_test_score  split0_train_score  split1_train_score  split2_train_score  split3_train_score  mean_train_score  std_train_score
+3     582.028721      3.031629       248.467156        2.553874      10        0.01    {'C': 10, 'gamma': 0.01}           0.977067           0.976067           0.976400           0.976067         0.976400        0.000408                1            0.998556            0.998689            0.998667            0.998622          0.998633         0.000051
+0     692.324033      4.100619       266.686596        1.308816       5        0.01     {'C': 5, 'gamma': 0.01}           0.975333           0.974867           0.974933           0.975600         0.975183        0.000300                2            0.995711            0.996111            0.995978            0.996356          0.996039         0.000233
+4    5832.431766     27.380109      1265.545959        5.187770      10       0.001   {'C': 10, 'gamma': 0.001}           0.786133           0.792533           0.780000           0.798867         0.789383        0.007044                3            0.790933            0.792733            0.796733            0.789133          0.792383         0.002816
+1    7446.896815     35.170135      1433.099745        4.840160       5       0.001    {'C': 5, 'gamma': 0.001}           0.694800           0.693467           0.684133           0.704200         0.694150        0.007110                4            0.695556            0.696689            0.702244            0.691733          0.696556         0.003763
+2   10431.229239      4.105211      1672.560417        0.904974       5      0.0001   {'C': 5, 'gamma': 0.0001}           0.112333           0.112333           0.112400           0.112400         0.112367        0.000033                5            0.112378            0.112378            0.112356            0.112356          0.112367         0.000011
+5   13172.362460      2.923576       905.970855        0.362281      10      0.0001  {'C': 10, 'gamma': 0.0001}           0.112333           0.112333           0.112400           0.112400         0.112367        0.000033                5            0.112378            0.112378            0.112356            0.112356          0.112367         0.000011
+
+
+	Migliori Iper-parametri: {'C': 10, 'gamma': 0.01}
+
+
+
+
+
+
+
+MPL su MNIST
+	Il tasso di accuratezza si aggirerà intorno al : 97.77%
+
+
+    mean_fit_time  std_fit_time  mean_score_time  std_score_time param_activation param_hidden_layer_sizes param_learning_rate param_max_iter param_solver                                                                                                                              params  split0_test_score  split1_test_score  split2_test_score  split3_test_score  mean_test_score  std_test_score  rank_test_score  split0_train_score  split1_train_score  split2_train_score  split3_train_score  mean_train_score  std_train_score
+15     111.192046     15.464918         0.236933        0.028450             tanh     (100, 100, 100, 100)            adaptive            200         adam  {'activation': 'tanh', 'hidden_layer_sizes': (100, 100, 100, 100), 'learning_rate': 'adaptive', 'max_iter': 200, 'solver': 'adam'}           0.978133           0.977333           0.977467           0.978000         0.977733        0.000340                1                 1.0            1.000000            1.000000            1.000000          1.000000         0.000000
+14     127.731309     14.954357         0.422413        0.098814             tanh     (100, 100, 100, 100)            constant            200         adam  {'activation': 'tanh', 'hidden_layer_sizes': (100, 100, 100, 100), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}           0.978133           0.977333           0.977467           0.978000         0.977733        0.000340                1                 1.0            1.000000            1.000000            1.000000          1.000000         0.000000
+13      92.823925      3.011802         0.429923        0.040180             tanh          (100, 100, 100)            adaptive            200         adam       {'activation': 'tanh', 'hidden_layer_sizes': (100, 100, 100), 'learning_rate': 'adaptive', 'max_iter': 200, 'solver': 'adam'}           0.978800           0.976467           0.974867           0.975800         0.976483        0.001453                3                 1.0            1.000000            1.000000            1.000000          1.000000         0.000000
+12      93.547767      3.018917         0.451304        0.029374             tanh          (100, 100, 100)            constant            200         adam       {'activation': 'tanh', 'hidden_layer_sizes': (100, 100, 100), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}           0.978800           0.976467           0.974867           0.975800         0.976483        0.001453                3                 1.0            1.000000            1.000000            1.000000          1.000000         0.000000
+3       90.448184      6.154754         0.453477        0.039259             relu               (100, 100)            adaptive            200         adam            {'activation': 'relu', 'hidden_layer_sizes': (100, 100), 'learning_rate': 'adaptive', 'max_iter': 200, 'solver': 'adam'}           0.977200           0.977467           0.975267           0.975867         0.976450        0.000913                5                 1.0            1.000000            1.000000            1.000000          1.000000         0.000000
+2       90.074568      6.121524         0.447771        0.066394             relu               (100, 100)            constant            200         adam            {'activation': 'relu', 'hidden_layer_sizes': (100, 100), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}           0.977200           0.977467           0.975267           0.975867         0.976450        0.000913                5                 1.0            1.000000            1.000000            1.000000          1.000000         0.000000
+11      88.065306      2.320831         0.391046        0.033810             tanh               (100, 100)            adaptive            200         adam            {'activation': 'tanh', 'hidden_layer_sizes': (100, 100), 'learning_rate': 'adaptive', 'max_iter': 200, 'solver': 'adam'}           0.977600           0.976533           0.974267           0.974933         0.975833        0.001311                7                 1.0            1.000000            1.000000            1.000000          1.000000         0.000000
+10      90.081175      2.421821         0.460265        0.036654             tanh               (100, 100)            constant            200         adam            {'activation': 'tanh', 'hidden_layer_sizes': (100, 100), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}           0.977600           0.976533           0.974267           0.974933         0.975833        0.001311                7                 1.0            1.000000            1.000000            1.000000          1.000000         0.000000
+7      122.923867     34.835917         0.556369        0.086234             relu     (100, 100, 100, 100)            adaptive            200         adam  {'activation': 'relu', 'hidden_layer_sizes': (100, 100, 100, 100), 'learning_rate': 'adaptive', 'max_iter': 200, 'solver': 'adam'}           0.980267           0.975067           0.973000           0.975000         0.975833        0.002691                7                 1.0            0.998378            0.998911            0.999644          0.999233         0.000631
+6      119.839091     36.472623         0.478382        0.083968             relu     (100, 100, 100, 100)            constant            200         adam  {'activation': 'relu', 'hidden_layer_sizes': (100, 100, 100, 100), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}           0.980267           0.975067           0.973000           0.975000         0.975833        0.002691                7                 1.0            0.998378            0.998911            0.999644          0.999233         0.000631
+
+
+	Migliori Iper-parametri: {'activation': 'tanh', 'hidden_layer_sizes': (100, 100, 100, 100), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}
+
+
+
+MPL su F_MNIST
+	Il tasso di accuratezza si aggirerà intorno al : 88.94%
+
+
+    mean_fit_time  std_fit_time  mean_score_time  std_score_time param_activation param_hidden_layer_sizes param_learning_rate param_max_iter param_solver                                                                                                                              params  split0_test_score  split1_test_score  split2_test_score  split3_test_score  mean_test_score  std_test_score  rank_test_score  split0_train_score  split1_train_score  split2_train_score  split3_train_score  mean_train_score  std_train_score
+11     254.390953     38.073542         0.465741        0.066497             tanh               (100, 100)            adaptive            200         adam            {'activation': 'tanh', 'hidden_layer_sizes': (100, 100), 'learning_rate': 'adaptive', 'max_iter': 200, 'solver': 'adam'}           0.884067           0.886733           0.894200           0.892533         0.889383        0.004136                1            0.999044            0.993000            0.999200            1.000000          0.997811         0.002801
+10     255.215833     39.288412         0.445920        0.023858             tanh               (100, 100)            constant            200         adam            {'activation': 'tanh', 'hidden_layer_sizes': (100, 100), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}           0.884067           0.886733           0.894200           0.892533         0.889383        0.004136                1            0.999044            0.993000            0.999200            1.000000          0.997811         0.002801
+7      315.825978     79.274308         0.837542        0.371677             relu     (100, 100, 100, 100)            adaptive            200         adam  {'activation': 'relu', 'hidden_layer_sizes': (100, 100, 100, 100), 'learning_rate': 'adaptive', 'max_iter': 200, 'solver': 'adam'}           0.886267           0.888667           0.890400           0.887400         0.888183        0.001536                3            0.984689            0.986511            0.984600            0.989533          0.986333         0.001999
+6      316.946725     71.227687         0.786738        0.273937             relu     (100, 100, 100, 100)            constant            200         adam  {'activation': 'relu', 'hidden_layer_sizes': (100, 100, 100, 100), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}           0.886267           0.888667           0.890400           0.887400         0.888183        0.001536                3            0.984689            0.986511            0.984600            0.989533          0.986333         0.001999
+3      274.312159     42.066821         0.748843        0.166487             relu               (100, 100)            adaptive            200         adam            {'activation': 'relu', 'hidden_layer_sizes': (100, 100), 'learning_rate': 'adaptive', 'max_iter': 200, 'solver': 'adam'}           0.888333           0.885133           0.889933           0.884933         0.887083        0.002128                5            0.994422            0.989622            0.993889            0.990089          0.992006         0.002165
+2      275.118574     41.472498         0.823270        0.105710             relu               (100, 100)            constant            200         adam            {'activation': 'relu', 'hidden_layer_sizes': (100, 100), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}           0.888333           0.885133           0.889933           0.884933         0.887083        0.002128                5            0.994422            0.989622            0.993889            0.990089          0.992006         0.002165
+15     200.887800     17.403700         0.198349        0.048644             tanh     (100, 100, 100, 100)            adaptive            200         adam  {'activation': 'tanh', 'hidden_layer_sizes': (100, 100, 100, 100), 'learning_rate': 'adaptive', 'max_iter': 200, 'solver': 'adam'}           0.886667           0.882733           0.888000           0.890800         0.887050        0.002905                7            0.996867            0.982067            0.988667            0.997156          0.991189         0.006273
+14     259.821016     23.410527         0.407344        0.062595             tanh     (100, 100, 100, 100)            constant            200         adam  {'activation': 'tanh', 'hidden_layer_sizes': (100, 100, 100, 100), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}           0.886667           0.882733           0.888000           0.890800         0.887050        0.002905                7            0.996867            0.982067            0.988667            0.997156          0.991189         0.006273
+5      274.288919     23.414923         0.623085        0.114418             relu          (100, 100, 100)            adaptive            200         adam       {'activation': 'relu', 'hidden_layer_sizes': (100, 100, 100), 'learning_rate': 'adaptive', 'max_iter': 200, 'solver': 'adam'}           0.887733           0.885800           0.888733           0.883067         0.886333        0.002161                9            0.994178            0.988356            0.981711            0.979444          0.985922         0.005783
+4      274.492059     24.529343         0.732711        0.175983             relu          (100, 100, 100)            constant            200         adam       {'activation': 'relu', 'hidden_layer_sizes': (100, 100, 100), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}           0.887733           0.885800           0.888733           0.883067         0.886333        0.002161                9            0.994178            0.988356            0.981711            0.979444          0.985922         0.005783
+
+
+	Migliori Iper-parametri: {'activation': 'tanh', 'hidden_layer_sizes': (100, 100), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}
+
+
+
+MPL su F_MNIST
+	Il tasso di accuratezza si aggirerà intorno al : 89.87%
+
+
+    mean_fit_time  std_fit_time  mean_score_time  std_score_time param_activation param_hidden_layer_sizes param_learning_rate param_max_iter param_solver                                                                                                                              params  split0_test_score  split1_test_score  split2_test_score  split3_test_score  mean_test_score  std_test_score  rank_test_score  split0_train_score  split1_train_score  split2_train_score  split3_train_score  mean_train_score  std_train_score
+11     520.782206     32.354866         0.837978        0.169387             tanh               (250, 250)            adaptive            200         adam            {'activation': 'tanh', 'hidden_layer_sizes': (250, 250), 'learning_rate': 'adaptive', 'max_iter': 200, 'solver': 'adam'}           0.893800           0.899067           0.902800           0.899267         0.898733        0.003212                1            0.998711            1.000000            0.999978            0.999978          0.999667         0.000552
+10     530.482859     31.829328         0.920105        0.192291             tanh               (250, 250)            constant            200         adam            {'activation': 'tanh', 'hidden_layer_sizes': (250, 250), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}           0.893800           0.899067           0.902800           0.899267         0.898733        0.003212                1            0.998711            1.000000            0.999978            0.999978          0.999667         0.000552
+5      813.431770     66.299069         1.530382        0.245710             relu          (250, 250, 250)            adaptive            200         adam       {'activation': 'relu', 'hidden_layer_sizes': (250, 250, 250), 'learning_rate': 'adaptive', 'max_iter': 200, 'solver': 'adam'}           0.891667           0.898200           0.900600           0.895400         0.896467        0.003327                3            0.992444            0.998156            0.992689            0.994022          0.994328         0.002290
+4      834.010791     65.635537         1.423654        0.246681             relu          (250, 250, 250)            constant            200         adam       {'activation': 'relu', 'hidden_layer_sizes': (250, 250, 250), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}           0.891667           0.898200           0.900600           0.895400         0.896467        0.003327                3            0.992444            0.998156            0.992689            0.994022          0.994328         0.002290
+7      916.430644     78.584906         1.764183        0.159292             relu     (250, 250, 250, 250)            adaptive            200         adam  {'activation': 'relu', 'hidden_layer_sizes': (250, 250, 250, 250), 'learning_rate': 'adaptive', 'max_iter': 200, 'solver': 'adam'}           0.893267           0.897667           0.900467           0.894067         0.896367        0.002890                5            0.993200            0.994667            0.992933            0.991022          0.992956         0.001297
+6      924.838977     73.564449         1.746154        0.154721             relu     (250, 250, 250, 250)            constant            200         adam  {'activation': 'relu', 'hidden_layer_sizes': (250, 250, 250, 250), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}           0.893267           0.897667           0.900467           0.894067         0.896367        0.002890                5            0.993200            0.994667            0.992933            0.991022          0.992956         0.001297
+3      508.356016     79.046985         0.965354        0.112661             relu               (250, 250)            adaptive            200         adam            {'activation': 'relu', 'hidden_layer_sizes': (250, 250), 'learning_rate': 'adaptive', 'max_iter': 200, 'solver': 'adam'}           0.892933           0.895600           0.897800           0.895600         0.895483        0.001725                7            0.995511            0.991778            0.989933            0.992556          0.992444         0.002010
+2      459.189133     80.575266         1.004635        0.143438             relu               (250, 250)            constant            200         adam            {'activation': 'relu', 'hidden_layer_sizes': (250, 250), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}           0.892933           0.895600           0.897800           0.895600         0.895483        0.001725                7            0.995511            0.991778            0.989933            0.992556          0.992444         0.002010
+1      616.327494    156.117065         1.456878        0.373978             relu                   (250,)            adaptive            200         adam                {'activation': 'relu', 'hidden_layer_sizes': (250,), 'learning_rate': 'adaptive', 'max_iter': 200, 'solver': 'adam'}           0.888467           0.893067           0.898867           0.892933         0.893333        0.003692                9            0.995333            0.995356            0.998556            0.996178          0.996356         0.001315
+0      617.469384    156.897566         1.446729        0.423110             relu                   (250,)            constant            200         adam                {'activation': 'relu', 'hidden_layer_sizes': (250,), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}           0.888467           0.893067           0.898867           0.892933         0.893333        0.003692                9            0.995333            0.995356            0.998556            0.996178          0.996356         0.001315
+
+
+	Migliori Iper-parametri: {'activation': 'tanh', 'hidden_layer_sizes': (250, 250), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}
+
+
+
+MPL su F_MNIST
+	Il tasso di accuratezza si aggirerà intorno al : 89.76%
+
+
+    mean_fit_time  std_fit_time  mean_score_time  std_score_time param_activation param_hidden_layer_sizes param_learning_rate param_max_iter param_solver                                                                                                                         params  split0_test_score  split1_test_score  split2_test_score  split3_test_score  mean_test_score  std_test_score  rank_test_score  split0_train_score  split1_train_score  split2_train_score  split3_train_score  mean_train_score  std_train_score
+5     1324.862961    208.164382         2.058881        0.651708             relu          (367, 367, 367)            adaptive            200         adam  {'activation': 'relu', 'hidden_layer_sizes': (367, 367, 367), 'learning_rate': 'adaptive', 'max_iter': 200, 'solver': 'adam'}           0.894733           0.898067           0.898533           0.899267         0.897650        0.001737                1            0.989733            0.997289            0.995867            0.996556          0.994861         0.003003
+4     1334.072722    205.693618         1.986575        0.660792             relu          (367, 367, 367)            constant            200         adam  {'activation': 'relu', 'hidden_layer_sizes': (367, 367, 367), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}           0.894733           0.898067           0.898533           0.899267         0.897650        0.001737                1            0.989733            0.997289            0.995867            0.996556          0.994861         0.003003
+13     970.564186     99.457036         1.427550        0.071964             tanh          (367, 367, 367)            adaptive            200         adam  {'activation': 'tanh', 'hidden_layer_sizes': (367, 367, 367), 'learning_rate': 'adaptive', 'max_iter': 200, 'solver': 'adam'}           0.898467           0.889000           0.904200           0.898600         0.897567        0.005460                3            1.000000            0.982311            1.000000            1.000000          0.995578         0.007660
+12     971.084226    101.045809         1.449089        0.090938             tanh          (367, 367, 367)            constant            200         adam  {'activation': 'tanh', 'hidden_layer_sizes': (367, 367, 367), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}           0.898467           0.889000           0.904200           0.898600         0.897567        0.005460                3            1.000000            0.982311            1.000000            1.000000          0.995578         0.007660
+3      910.795215    227.484972         1.417180        0.717180             relu               (367, 367)            adaptive            200         adam       {'activation': 'relu', 'hidden_layer_sizes': (367, 367), 'learning_rate': 'adaptive', 'max_iter': 200, 'solver': 'adam'}           0.894200           0.892400           0.899267           0.898667         0.896133        0.002912                5            0.992933            0.982778            0.996511            0.994956          0.991794         0.005358
+2      855.430918    249.348673         1.550496        0.662376             relu               (367, 367)            constant            200         adam       {'activation': 'relu', 'hidden_layer_sizes': (367, 367), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}           0.894200           0.892400           0.899267           0.898667         0.896133        0.002912                5            0.992933            0.982778            0.996511            0.994956          0.991794         0.005358
+9      757.627439     28.878472         0.684296        0.045564             tanh                   (367,)            adaptive            200         adam           {'activation': 'tanh', 'hidden_layer_sizes': (367,), 'learning_rate': 'adaptive', 'max_iter': 200, 'solver': 'adam'}           0.895467           0.893667           0.899000           0.895933         0.896017        0.001919                7            0.999911            0.999089            0.999778            0.999489          0.999567         0.000315
+8      735.684877     20.162775         0.755927        0.070557             tanh                   (367,)            constant            200         adam           {'activation': 'tanh', 'hidden_layer_sizes': (367,), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}           0.895467           0.893667           0.899000           0.895933         0.896017        0.001919                7            0.999911            0.999089            0.999778            0.999489          0.999567         0.000315
+11     785.836756     98.628033         1.019169        0.023617             tanh               (367, 367)            adaptive            200         adam       {'activation': 'tanh', 'hidden_layer_sizes': (367, 367), 'learning_rate': 'adaptive', 'max_iter': 200, 'solver': 'adam'}           0.882400           0.899267           0.899667           0.896200         0.894383        0.007047                9            0.977444            0.999844            0.998933            0.976844          0.988267         0.011129
+10     782.096117     98.901684         1.135109        0.061329             tanh               (367, 367)            constant            200         adam       {'activation': 'tanh', 'hidden_layer_sizes': (367, 367), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}           0.882400           0.899267           0.899667           0.896200         0.894383        0.007047                9            0.977444            0.999844            0.998933            0.976844          0.988267         0.011129
+
+
+	Migliori Iper-parametri: {'activation': 'relu', 'hidden_layer_sizes': (367, 367, 367), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}
+
+
+
+MPL su F_MNIST
+	Il tasso di accuratezza si aggirerà intorno al : 89.99%
+
+
+    mean_fit_time  std_fit_time  mean_score_time  std_score_time param_activation param_hidden_layer_sizes param_learning_rate param_max_iter param_solver                                                                                                                              params  split0_test_score  split1_test_score  split2_test_score  split3_test_score  mean_test_score  std_test_score  rank_test_score  split0_train_score  split1_train_score  split2_train_score  split3_train_score  mean_train_score  std_train_score
+11    1362.626959     58.094288         1.626316        0.078401             tanh               (512, 512)            adaptive            200         adam            {'activation': 'tanh', 'hidden_layer_sizes': (512, 512), 'learning_rate': 'adaptive', 'max_iter': 200, 'solver': 'adam'}           0.889933           0.903067           0.905267           0.901333         0.899900        0.005921                1            0.989178            1.000000            1.000000            0.999933          0.997278         0.004677
+10    1370.361680     56.838704         1.573196        0.014534             tanh               (512, 512)            constant            200         adam            {'activation': 'tanh', 'hidden_layer_sizes': (512, 512), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}           0.889933           0.903067           0.905267           0.901333         0.899900        0.005921                1            0.989178            1.000000            1.000000            0.999933          0.997278         0.004677
+3     1426.263508    206.653238         2.063784        0.256911             relu               (512, 512)            adaptive            200         adam            {'activation': 'relu', 'hidden_layer_sizes': (512, 512), 'learning_rate': 'adaptive', 'max_iter': 200, 'solver': 'adam'}           0.892800           0.897867           0.903467           0.900800         0.898733        0.003957                3            0.986511            0.994844            0.998600            0.996133          0.994022         0.004542
+2     1332.383750    194.564393         2.067040        0.215460             relu               (512, 512)            constant            200         adam            {'activation': 'relu', 'hidden_layer_sizes': (512, 512), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}           0.892800           0.897867           0.903467           0.900800         0.898733        0.003957                3            0.986511            0.994844            0.998600            0.996133          0.994022         0.004542
+5     2087.302284    406.748862         3.024258        0.602105             relu          (512, 512, 512)            adaptive            200         adam       {'activation': 'relu', 'hidden_layer_sizes': (512, 512, 512), 'learning_rate': 'adaptive', 'max_iter': 200, 'solver': 'adam'}           0.893667           0.896600           0.899667           0.888400         0.894583        0.004153                5            0.996222            0.997244            0.993644            0.988311          0.993856         0.003459
+4     2092.930555    403.000834         2.895884        0.606708             relu          (512, 512, 512)            constant            200         adam       {'activation': 'relu', 'hidden_layer_sizes': (512, 512, 512), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}           0.893667           0.896600           0.899667           0.888400         0.894583        0.004153                5            0.996222            0.997244            0.993644            0.988311          0.993856         0.003459
+1     1163.465919    279.122943         3.677976        1.690884             relu                   (512,)            adaptive            200         adam                {'activation': 'relu', 'hidden_layer_sizes': (512,), 'learning_rate': 'adaptive', 'max_iter': 200, 'solver': 'adam'}           0.891867           0.885600           0.903000           0.896267         0.894183        0.006347                7            0.995756            0.979200            0.997489            0.994956          0.991850         0.007361
+0     1162.232971    278.474795         3.659969        1.705248             relu                   (512,)            constant            200         adam                {'activation': 'relu', 'hidden_layer_sizes': (512,), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}           0.891867           0.885600           0.903000           0.896267         0.894183        0.006347                7            0.995756            0.979200            0.997489            0.994956          0.991850         0.007361
+7     3313.119639    297.587572         5.322791        1.028247             relu     (512, 512, 512, 512)            adaptive            200         adam  {'activation': 'relu', 'hidden_layer_sizes': (512, 512, 512, 512), 'learning_rate': 'adaptive', 'max_iter': 200, 'solver': 'adam'}           0.894267           0.892067           0.899267           0.890933         0.894133        0.003197                9            0.992089            0.995400            0.996200            0.991889          0.993894         0.001928
+6     3374.409740    290.468546         5.255795        1.018797             relu     (512, 512, 512, 512)            constant            200         adam  {'activation': 'relu', 'hidden_layer_sizes': (512, 512, 512, 512), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}           0.894267           0.892067           0.899267           0.890933         0.894133        0.003197                9            0.992089            0.995400            0.996200            0.991889          0.993894         0.001928
+
+
+	Migliori Iper-parametri: {'activation': 'tanh', 'hidden_layer_sizes': (512, 512), 'learning_rate': 'constant', 'max_iter': 200, 'solver': 'adam'}
+
