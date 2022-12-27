@@ -1,7 +1,4 @@
 # Classificazione delle immagini  
-Questo progetto è caratterizzato da due fasi:
-1. [Test classificatori su dataset MNIST e F-MNIST](#test-classificatori-su-dataset-mnist-e-f-mnist)
-2. [Test Reti Neurali su dataset MNIST e F-MNIST](#test-reti-neurali-su-dataset-mnist-e-f-mnist)
 
 ### Struttura del progetto
 Il progetto nella repository prevede la seguente oranizzazione:
@@ -23,6 +20,8 @@ Il progetto nella repository prevede la seguente oranizzazione:
   * randomForest_classifier_HO.py
   * SVM_classifier.py
   * SVM_classifier_HO.py
+  * MPL_classifier.py
+  * MPL_classifier_HO.py
   
   
 Nella seguente tabella viene mostrato il contenuto siogni cartella o file  
@@ -43,6 +42,8 @@ Nella seguente tabella viene mostrato il contenuto siogni cartella o file
 | randomForest_classifier_HO.py | File Python    | Script per testare gli Iper-parametri della foresta randomica per ottenere la maggiore accuratezza  |
 | SVM_classifier.py             | File Python    | Script per addestrare una SVM su dataset MNIST/F-MNIST                                              |
 | SVM_classifier_HO.py          | File Python    | Script per testare gli Iper-parametri della SVM per ottenere la maggiore accuratezza                |
+| MPL_classifier.py             | File Python    | Script per addestrare una MPL su dataset MNIST/F-MNIST                                              |
+| MPL_classifier_HO.py          | File Python    | Script per testare gli Iper-parametri del MPL per ottenere la maggiore accuratezza                  |
 
 
 
@@ -65,6 +66,7 @@ I classificatori utilizzati sono stati:
 - Alberi decisionali
 - Foreste Casuali
 - Macchina a vettori di supporto (SVM)
+- Percettrone Multinastro (MPL) [Particolare architettura delle reti neurali artificiali] 
 
 
 ### Importare il dataset
@@ -144,6 +146,9 @@ from sklearn.ensemble import RandomForestClassifier
 
 # Macchina a vettori di supporto SVM
 from sklearn.svm import SVC
+
+# Percettrone Multinastro MPL
+from sklearn.neural_network import MLPClassifier
 ```
 Altre API da `sklearn` utilizzate:
 ```python
@@ -260,7 +265,6 @@ DT su F_MNIST
 
 
 - Test del 2022-10-27 12:52:16 F_MNIST con Decision Tree (profondità: 13, c: gini, mf: 0.5, msl: 1): 
--
 
 	 + Tempo caricamento dataset: 0.457 sec
 	 + Tempo addestramento modello: 15.118 sec
@@ -287,8 +291,3 @@ Report di classificazione
 | **accuracy**     |               |            | 0.81          | 10000       |
 | **macro avg**    | 0.81          | 0.81       | 0.81          | 10000       |
 | **weighted avg** | 0.81          | 0.81       | 0.81          | 10000       |
-
-
-
-# Test Reti Neurali su dataset MNIST e F-MNIST
-!!! In Fase di progettazione !!!
